@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "routes": [
+    {"id":"developer","title":"开发者选项","aliases":["开发者功能","开发人员选项"],"component":"com.android.settings/com.android.settings.Settings$DevelopmentSettingsActivity","args":[],"verified":"2026-10-22: adb shell, focused activity confirmed"},
+    {"id":"wireless-debugging","title":"无线调试","aliases":["WiFi调试","无线ADB"],"component":"com.android.settings/com.android.settings.SubSettings","args":["--es",":settings:show_fragment","com.android.settings.development.WirelessDebuggingFragment"],"verified":"2026-10-22: root required; visible 无线调试 title confirmed; switch unchanged"},
+    {"id":"keyboard","title":"输入法设置","aliases":["键盘设置","输入法"],"component":"com.android.settings/com.android.settings.Settings$KeyboardSettingsActivity","args":[],"verified":"2026-10-21: ability.call, focused activity confirmed"},
+    {"id":"battery-health","title":"电池健康度","aliases":["电池健康"],"component":"com.stepos.battery/com.stepos.battery.app.batteryhealth.BatteryHealthActivity","args":[],"verified":"2026-10-21: ability.call, focused activity confirmed"}
+  ]
+}

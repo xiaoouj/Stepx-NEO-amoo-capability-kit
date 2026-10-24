@@ -1,0 +1,5007 @@
+{
+  "date": "2026-10-22",
+  "scope": "397 documentation entries + GUI entry + 2 store methods + 4 custom executor methods; not a runtime success count",
+  "methodCount": 404,
+  "cloudReferenceCount": 40,
+  "registeredAppFunctionCount": 15,
+  "categories": {
+    "系统设置": 121,
+    "电话与短信": 80,
+    "联系人与黑名单": 22,
+    "应用、设备、日历与实用工具": 40,
+    "相册与媒体编辑": 51,
+    "文件、笔记与待办": 31,
+    "定位、地图与导航": 18,
+    "时钟、定时任务与网关": 14,
+    "网络搜索与网页": 6,
+    "会话与运行时": 12,
+    "日志录制": 2,
+    "通用GUI自动化": 1,
+    "商店原子能力（补充）": 2,
+    "本次新增的手机端工具": 4
+  },
+  "entries": [
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_wifi_switch",
+      "description": "打开或关闭WIFI。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开或关闭WIFI，true为打开，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 12
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_bluetooth_switch",
+      "description": "打开或关闭蓝牙。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开或关闭蓝牙，true为打开，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 18
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_hotspot_switch",
+      "description": "开启或关闭热点。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<开启或关闭热点，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 24
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_airplane_mode_switch",
+      "description": "打开或关闭飞行模式。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开或关闭飞行模式，true为打开，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 30
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_data_switch",
+      "description": "打开或关闭数据网络。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开或关闭数据网络，true为打开，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 36
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_connect_wifi",
+      "description": "连接一个新的WIFI，需要提供对应的名称和密码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"ssid\":\"<WIFI名称>\",\"password\":\"<WIFI密码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 42
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_choose_wifi",
+      "description": "切换到一个已保存的WIFI。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"newValue\":\"<要切换到的WIFI名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 48
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_forget_wifi",
+      "description": "删除/忘记已保存的WIFI。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"newValue\":\"<要删除/忘记的WIFI名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 54
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_config_hotspot",
+      "description": "开启热点并设置热点名称和密码（密码长度需大于8位）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"ssid\":\"<热点名称>\",\"password\":\"<热点密码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 60
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_wifi_details_activity",
+      "description": "打开当前连接的WIFI详情页面，可查看技术标准、IP地址、MAC地址等详情。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<true为打开WIFI详情页>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 66
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_set_brightness",
+      "description": "调整屏幕亮度到指定数值。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"newValue\":\"<亮度数值，1-100的百分比比例>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 74
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_adjust_brightness",
+      "description": "相对调整屏幕亮度（调亮一些或调暗一些）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<调亮为true，调暗为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 80
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_auto_brightness_switch",
+      "description": "打开或关闭自动亮度调节。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 86
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_auto_rotation_switch",
+      "description": "打开或关闭屏幕自动旋转。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 92
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_dark_mode_switch",
+      "description": "打开或关闭系统深色模式。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 98
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_screen_saver_switch",
+      "description": "打开或关闭屏保开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 104
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_set_screen_off_time",
+      "description": "调整自动锁屏时间（15秒、30秒、1分钟等，单位为秒）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"newValue\":\"<息屏时间，单位秒>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 110
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_adjust_screen_off_time",
+      "description": "延长或缩短自动锁屏时间。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<延长为true，缩短为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 116
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_set_media_sound",
+      "description": "调整媒体音量到指定百分比。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"newValue\":\"<媒体音量百分比>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 124
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_adjust_sound",
+      "description": "增大或减小媒体音量。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<增大为true，减小为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 130
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_vibration_switch",
+      "description": "打开或关闭系统震动。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 136
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_disturb_mode_switch",
+      "description": "开启或关闭系统勿扰模式。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<开启为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 142
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_dialing_keypad_sound_switch",
+      "description": "打开或关闭拨号键盘提示音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 148
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_screen_lock_sound_switch",
+      "description": "打开或关闭屏幕锁定提示音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 154
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_charging_notif_sound_switch",
+      "description": "打开或关闭充电提示音和振动。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 160
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_touch_sound_switch",
+      "description": "打开或关闭点按和点击提示音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 166
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_adjust_font_size",
+      "description": "将字体调大一些或调小一些。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<调大为true，调小为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 174
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_adjust_display_size",
+      "description": "将界面显示调大一些或调小一些。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<调大为true，调小为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 180
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_battery_saver_switch",
+      "description": "打开或关闭省电模式。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 188
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_battery_percentage_switch",
+      "description": "显示或隐藏电池电量百分比。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<显示为true，隐藏为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 194
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_one_handed_mode_switch",
+      "description": "打开或关闭单手模式。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 202
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_tapToCheck_phone_switch",
+      "description": "打开或关闭\"点按手机即显示\"（点击屏幕亮屏）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 208
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_liftToCheck_phone_switch",
+      "description": "打开或关闭拿起手机即显示（抬起亮屏）功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<打开为true，关闭为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 214
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_adjust_navigation_mode",
+      "description": "切换系统导航模式，支持手势导航和三键（按键）导航之间的切换。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<手势导航为true，按键导航为false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 220
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_adjust_system_language",
+      "description": "切换系统语言，支持中文、英语、法语、德语、意大利语、日语、韩语等。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"newValue\":\"<系统语言代码，如CHINESE、ENGLISH等>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 226
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_homepage_activity",
+      "description": "打开设置主页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 238
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_system_dashboard_activity",
+      "description": "打开系统设置界面，提供语言、手势、日期和时间、备份、用户、重置选项等菜单。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 244
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_device_info_settings_activity",
+      "description": "打开/进入关于本机界面。该界面展示了手机型号，系统版本号以及设备标识符：ip地址，mac地址",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 250
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_sub_settings_reset_dashboard_activity",
+      "description": "打开重置选项界面，包括重置移动网络、蓝牙和WLAN、应用偏好设置、恢复出厂设置等选项。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 255
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_network_dashboard_activity",
+      "description": "打开设置的网络页面，可访问WIFI、热点、SIM卡、VPN、DNS等功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 263
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_network_provider_settings_activity",
+      "description": "打开设置的WIFI页面，包含WIFI网络搜索、添加、连接、已保存网络等入口。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 269
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_configure_wifi_settings_activity",
+      "description": "打开WIFI偏好设置页面，包含自动打开WIFI控制、公共网络提醒、证书安装等功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 275
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_saved_access_points_settings_activity",
+      "description": "打开已保存WIFI页面，可进行取消保存、断开连接、分享、查看详情等操作。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 281
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_mobile_network_list_activity",
+      "description": "打开SIM卡管理页面，包含双卡数据切换、数据流量开关控制等功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 287
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_reset_mobile_network_settings_activity",
+      "description": "打开数据网络重置页面（仅展示，不直接重置）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 293
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_tether_settings_activity",
+      "description": "打开热点/网络共享页面，供用户手动开关热点。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 299
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_wifi_p_2_p_settings_activity",
+      "description": "打开P2P连接页面，可查看搜索到的支持P2P的设备并发起连接。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 305
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_vpn_settings_activity",
+      "description": "打开VPN连接页面，可对VPN进行添加/配置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 311
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_data_saver_summary_activity",
+      "description": "打开省流模式页面，可配置不限制移动数据用量的应用及手动开关省流模式。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 317
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_wifi_display_settings_activity",
+      "description": "打开投屏设置界面，可搜索附近可投屏的设备。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 323
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_connected_device_dashboard_activity",
+      "description": "打开已连接设备页面，展示已连接的蓝牙、USB相关功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 331
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_blue_tooth_pairing_activity",
+      "description": "打开蓝牙页面，供用户连接/配置蓝牙。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 337
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_nfc_settings_activity",
+      "description": "打开NFC设置页面，可进行NFC功能的设置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 343
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_advanced_connected_device_activity",
+      "description": "打开连接偏好设置页面，供用户对蓝牙、NFC、投屏、打印、超带宽功能的偏好进行设置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 349
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_usb_details_activity",
+      "description": "打开USB详情页面，提供USB偏好设置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 355
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_print_settings_activity",
+      "description": "打开打印页面，可选择默认打印服务或其他已安装的打印服务。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 361
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_screen_timeout_activity",
+      "description": "打开自动锁屏界面（仅展示，不直接调整时间）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 369
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_text_reading_settings_activity",
+      "description": "打开显示大小和文字大小调整界面，还提供粗体文字和高对比度文字开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 375
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_color_contrast_activity",
+      "description": "打开颜色对比度调整界面，还提供高对比度文字开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 381
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_sub_settings_color_mode_preference_activity",
+      "description": "打开颜色设置界面，提供颜色自然色和自适应的切换功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 387
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_dream_settings_activity",
+      "description": "打开屏保界面（仅展示，不直接打开或关闭屏保）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 393
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_wallpaper_settings_activity",
+      "description": "打开壁纸界面，可通过不同壁纸来源进行壁纸设置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 399
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_lock_screen_settings_activity",
+      "description": "打开锁屏界面，可调整锁屏显示的通知内容、显示文字及动态时钟等。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 405
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_sound_settings_activity",
+      "description": "打开音量管理页面，包含音量、振动、勿扰模式及手机铃声等设置项。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 413
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_notification_assistant_settings_activity",
+      "description": "打开通知管理页面，可显示历史通知及通知常规设置项。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 419
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_zen_mode_settings_activity",
+      "description": "打开勿扰模式管理页面，可配置排除在外的联系人、应用、时间段等。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 425
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_fingerprint_settings_activity",
+      "description": "打开锁屏密码设置页面，包含滑动、图案、PIN码、密码等锁屏方式选择。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 433
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_keyboard_settings_activity",
+      "description": "打开键盘管理页面，包含键盘切换入口、个人字典配置、指针速度调整等功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "文档过期：实机返回20004未找到对应原子能力",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 441
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_date_time_settings_activity",
+      "description": "打开语言设置界面（仅展示，不直接调整系统语言）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 447
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_locale_picker_activity",
+      "description": "打开语言设置界面（仅展示，不直接调整系统语言）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 453
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_measurement_system_settings_activity",
+      "description": "打开导航模式设置界面，提供手势导航和\"三按钮\"导航的切换。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 459
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_manage_applications",
+      "description": "打开所有应用页面，展示所有已安装的应用。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 467
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_app_dashboard_activity",
+      "description": "打开应用管理页面，可查看最近使用和已安装的应用，也是默认应用设置的入口。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 473
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_storage_dashboard_activity",
+      "description": "打开存储空间界面，展示存储空间使用量及存储空间管理。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 479
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_settings_power_usage_summary_activity",
+      "description": "打开电池界面，展示电池使用信息及电池电量相关开关设置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 487
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_sub_settings_power_usage_advanced_activity",
+      "description": "打开电池使用情况界面，展示电池充满电使用时间、应用耗电量等信息。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 493
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_open_sub_settings_gesture_settings_activity",
+      "description": "打开手势界面，包含快速打开相机、导航模式、单手模式、点按/拿起手机即显示等功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 501
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "common_ability_has_fingerprint",
+      "description": "获取当前手机是否支持指纹识别。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 513
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "common_ability_has_face_rec",
+      "description": "获取当前手机是否支持人脸识别。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 519
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "common_ability_get_app_permissions",
+      "description": "通过packageName获取应用非普通权限使用详情。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 525
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "common_ability_check_app_permission",
+      "description": "通过packageName和指定的permission字段，检查应用是否获取指定的permission。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"permissionName\":\"<要检查的应用权限名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 531
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_battery_percentage_state",
+      "description": "获取电池电量百分比是否开启的状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 543
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_wifi_state",
+      "description": "获取WIFI的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 549
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_bluetooth_state",
+      "description": "获取蓝牙的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 555
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_hotspot_state",
+      "description": "获取热点的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 561
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_airplane_mode_state",
+      "description": "获取飞行模式的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 567
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_data_state",
+      "description": "获取数据网络的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 573
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_vibration_state",
+      "description": "获取系统震动的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 579
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_dark_mode_state",
+      "description": "获取深色模式的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 585
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_dialing_keypad_sound_state",
+      "description": "获取拨号键的提示音的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 591
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_screen_lock_sound_state",
+      "description": "获取屏幕锁定提示音的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 597
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_charging_notif_sound_state",
+      "description": "获取充电提示音和振动的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 603
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_touch_sound_state",
+      "description": "获取点按和点击提示音的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 609
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_auto_brightness_state",
+      "description": "获取自动亮度调节的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "已实测查询",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 615
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_auto_rotation_state",
+      "description": "获取屏幕自动旋转的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 621
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_screen_saver_state",
+      "description": "获取屏保的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 627
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_one_handed_mode_state",
+      "description": "获取\"单手模式\"的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 633
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_tapToCheck_phone_state",
+      "description": "获取\"点按手机即显示\"的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 639
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_liftToCheck_phone_state",
+      "description": "获取\"捂起手机即显示\"的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 645
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_battery_saver_state",
+      "description": "获取\"省电模式\"的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 651
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_get_app_lock_state",
+      "description": "获取\"应用锁\"的开关状态。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 657
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "settings_app_lock_config_switch",
+      "description": "打开/关闭应用锁，需要提供密码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<true打开/false关闭>\",\"password\":\"<解锁密码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 663
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_permissioncontroller_global_location",
+      "description": "开启/关闭 全局位置信息权限。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 675
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_permissioncontroller_global_microphone",
+      "description": "开启/关闭 全局麦克风权限。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 681
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_permissioncontroller_global_camera",
+      "description": "开启/关闭 全局摄像头权限。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 687
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_center_open_main",
+      "description": "打开手机管家应用。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 699
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_center_power_saving_enable",
+      "description": "开启/关闭 省电模式（手机管家）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 705
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_manager_open_harassment_interception",
+      "description": "打开骚扰拦截页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 711
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_manager_into_virus_page",
+      "description": "打开病毒查杀页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 717
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_center_network_pay_enable",
+      "description": "开启/关闭 移动网络安全支付。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 723
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_center_pay_enable",
+      "description": "开启/关闭 隐私支付保护。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 729
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_center_usb_install_enable",
+      "description": "开启/关闭 USB安装管控。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 735
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_center_enable_function",
+      "description": "开启/关闭 手机管家功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 741
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_safebox_auto_fill",
+      "description": "开启/关闭 私密保险箱中的自动填写。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 753
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_safebox_open",
+      "description": "打开设置-安全-私密保险箱。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 759
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_service_open_oaid_settings",
+      "description": "打开OAID设置页。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 771
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "security_service_get_uuid",
+      "description": "获取手机UUID。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 777
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "open_flash_light",
+      "description": "开关手电筒。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"openState\":\"<true开/false关>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 789
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "query_notification_info",
+      "description": "筛选/查询系统的通知内容，如\"帮我查一下'微信'发来了什么消息\"。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"keyword\":\"<人名或应用名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 795
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "screen_capture_record",
+      "description": "录制设备屏幕视频（录屏）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 807
+    },
+    {
+      "category": "system_settings",
+      "categoryTitle": "系统设置",
+      "method": "screen_capture_screenshot",
+      "description": "截取当前设备屏幕内容（截屏）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/system_settings.md",
+      "sourceLine": 813
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_call_to",
+      "description": "给指定的号码拨打电话。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要拨打的电话号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 10
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_show_incall_screen",
+      "description": "通话过程中，拉起通话界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_accept_call",
+      "description": "如果当前有来电，接听电话。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 22
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_hangup_call",
+      "description": "如果当前有来电，挂断来电；如果当前有通话，挂断当前通话。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 28
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_call_back",
+      "description": "回拨通话记录中最近一次通话的号码，如果没有通话记录，不做任何操作。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 34
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_check_last_caller",
+      "description": "查询通话记录中最近一次来电的号码，如果没有通话记录，返回空字符串。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 40
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_show_dialpad",
+      "description": "打开拨号盘，并填充输入的数字。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 46
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_enable_power_button_ends_call",
+      "description": "开启或关闭按电源键挂断电话功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<是否开启，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 52
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_enable_incoming_flip_silent",
+      "description": "开启或关闭来电翻转静音功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<是否开启，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 58
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_vibrate_when_mocall_connected",
+      "description": "开启或关闭接通时振动功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<是否开启，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 64
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_open_auto_record_screen",
+      "description": "打开通话录音设置界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 70
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_allow_viewing_medical_information",
+      "description": "开启或关闭未解锁时直接查看医疗急救信息的功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<是否开启，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 76
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_sos_auto_call",
+      "description": "开启或关闭SOS紧急求助时自动报警的功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<是否开启，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 82
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_sos_send_position",
+      "description": "开启或关闭SOS紧急求助时自动发送位置给警方功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<是否开启，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 88
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_call_contact",
+      "description": "给指定联系人拨打电话（支持模糊匹配）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"name\":\"<联系人姓名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 94
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog",
+      "description": "按日期或日期范围查询通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 100
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_of_contact",
+      "description": "查询某个联系人的通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"name\":\"<联系人姓名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 106
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_by_type",
+      "description": "按通话类型查询通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"callType\":\"<未接|拨入|拨出|语音留言|已搁置|已拦截>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 112
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_by_number",
+      "description": "按联系人号码查询通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<联系人号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 118
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_this_morning",
+      "description": "查询今天早上的通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 124
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_this_afternoon",
+      "description": "查询今天下午的通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 130
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_tonight",
+      "description": "查询今晚的通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 136
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_today",
+      "description": "查询今天的通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 142
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_yesterday",
+      "description": "查询昨天的通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 148
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_calllog_day_before_yesterday",
+      "description": "查询前天的通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 154
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_query_call_duration_ranking",
+      "description": "查看通话时长排行榜，按时长由长到短排序。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 160
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_delete_calllog",
+      "description": "按条件删除通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 166
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_delete_calllog_by_contact_name",
+      "description": "按联系人姓名删除通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"name\":\"<联系人姓名，精确匹配>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 172
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_delete_calllog_by_number",
+      "description": "按联系人号码删除通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<联系人号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 178
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_delete_last_calllog",
+      "description": "删除最近一次通话记录。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 184
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_delete_calllog_today",
+      "description": "删除今天的通话记录（00:00:00 到当前时刻）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 190
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_open_call_settings",
+      "description": "打开电话设置界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 196
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_open_sim_card_settings",
+      "description": "打开SIM卡设置界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 202
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_open_medical_emergency_information",
+      "description": "打开医疗急救信息界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 208
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_sos_auto_help_emergency_contact",
+      "description": "开启或关闭SOS紧急求助时的自动求助紧急联系人开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 214
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "dialer_settings_sos_dial_assist",
+      "description": "开启或关闭SOS紧急求助时的报警辅助开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 220
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "tele_mobilenet_phone_numbers",
+      "description": "获取手机号码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 230
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "tele_mobilenet_signal_strength",
+      "description": "获取信号强度。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 236
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "tele_mobilenet_data_enable",
+      "description": "开启或关闭移动数据。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<开启或关闭移动数据，true为开启，false为关闭>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 242
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_send",
+      "description": "给指定联系人或号码发送一条短信。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"message\":\"<短信内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 252
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_search",
+      "description": "搜索短信，支持按关键词、日期范围、联系人号码搜索。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 258
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_delete",
+      "description": "删除短信，支持按短信ID、会话ID或电话号码删除。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 264
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_thread_delete",
+      "description": "删除短信会话，删除整个对话会话及其包含的所有短信。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 270
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_forward",
+      "description": "转发短信给其他联系人，支持按短信ID获取内容或直接提供消息内容。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"forward_to\":\"<转发目标电话号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 276
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_read_status",
+      "description": "标记短信已读或未读状态，支持按短信ID、会话ID或电话号码操作。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"read\":\"<是否标记为已读，true=已读，false=未读>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 282
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_statistics",
+      "description": "获取短信统计信息，包括收件箱、发件箱、草稿箱数量、未读数及会话数等。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 288
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_schedule_send",
+      "description": "设置定时发送短信，在指定时间自动发送短信。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"phone_number\":\"<收件人电话号码>\",\"message\":\"<短信内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 294
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_draft_save",
+      "description": "保存短信草稿到草稿箱。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"message\":\"<草稿内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 304
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_draft_get",
+      "description": "获取短信草稿，支持按草稿ID、电话号码、会话ID查询，或获取所有草稿。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 310
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_draft_delete",
+      "description": "删除短信草稿，支持按草稿ID、电话号码、会话ID删除，或删除所有草稿。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 316
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_send_direct",
+      "description": "给指定联系人或号码发送短信。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"phone\":\"<联系人或号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 326
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_query",
+      "description": "通过号码查询指定短信。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"call\":\"<短信号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 332
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_send_sound",
+      "description": "设置短信发送声音开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enabled\":\"<是否启用>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 338
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_notify_sound",
+      "description": "设置短信通知声音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"sound_uri\":\"<通知声音URI，空字符串表示静音>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 344
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_notify_vibration",
+      "description": "设置短信通知振动开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enabled\":\"<是否启用>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 350
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_auto_retrieve_mms",
+      "description": "设置自动下载彩信开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enabled\":\"<是否启用>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 356
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_delivery_reports",
+      "description": "设置短信送达报告开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enabled\":\"<是否启用>\",\"sub_id\":\"<订阅ID>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 362
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_intelligent_msg",
+      "description": "开启/关闭智能短信开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 368
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_notif_detail",
+      "description": "开启/关闭短信的显示通知详情开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 374
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_auto_retrieval",
+      "description": "开启/关闭漫游时彩信自动下载开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\",\"sim_id\":\"<1或2>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 380
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_risk_url",
+      "description": "开启/关闭风险网址识别开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 386
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_expired_veri",
+      "description": "开启/关闭自动删除验证码短信开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 392
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_expired_pickup",
+      "description": "开启/关闭自动删除取件码短信开关。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 398
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_delivery_reports",
+      "description": "开启/关闭短信送达报告开关（设置侧）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"enable\":\"<true/false>\",\"sim_id\":\"<1或2>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 404
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_quick_reply",
+      "description": "编辑快速回复内容。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"content\":\"<快速回复内容>\",\"index\":\"<第几条，从1开始>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 410
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_center_num",
+      "description": "设置短信中心号码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<号码>\",\"sim_id\":\"<1或2>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 416
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_settings_sim_messages",
+      "description": "获取SIM卡存储的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"sim_id\":\"<1或2>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 422
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_account_balance_inquiry",
+      "description": "查话费余额，通过发送短信查询本机话费。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"slot_index\":\"<0或1>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 428
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_data_balance_inquiry",
+      "description": "查流量余额，通过发送短信查询本机数据流量。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"slot_index\":\"<0或1>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 434
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_list_today_query",
+      "description": "查询今天收/发的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 440
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_list_yesterday_query",
+      "description": "查询昨天的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 446
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_list_day_before_yesterday_query",
+      "description": "查询前天的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 452
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_list_last_week_query",
+      "description": "查询上周的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 458
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_list_morning_query",
+      "description": "查询今天上午的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 464
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_list_afternoon_query",
+      "description": "查询今天下午的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 470
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_list_evening_query",
+      "description": "查询今天晚上的短信列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 476
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_open_personal_list",
+      "description": "打开个人短信列表页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 482
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_open_notice_list",
+      "description": "打开通知短信列表页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 488
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_open_collected_list",
+      "description": "打开收藏短信列表页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 494
+    },
+    {
+      "category": "phone_comm",
+      "categoryTitle": "电话与短信",
+      "method": "sms_open_settings_page",
+      "description": "打开短信设置页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/phone_comm.md",
+      "sourceLine": 500
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_contacts_add",
+      "description": "添加联系人，需要提供号码，还可选填名称、邮箱、公司、职位、备注、地址等信息。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<联系人号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 10
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_contacts_update",
+      "description": "修改联系人的信息。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_contacts_query",
+      "description": "查询联系人，可以通过号码、名称等信息查询。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 22
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_contacts_delete",
+      "description": "删除联系人，支持按号码、姓名、公司、地址匹配删除。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 28
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_contacts_delete_one",
+      "description": "删除指定号码对应的单个联系人。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要删除联系人的电话号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 34
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_open_contacts_editor",
+      "description": "打开联系人编辑界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 40
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_add_group",
+      "description": "添加联系人群组，需要提供群组名。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"title\":\"<联系人群组名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 46
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_contacts_set_starred",
+      "description": "收藏或取消收藏联系人。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"starred\":\"<true收藏/false取消>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 52
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_contacts_copy_number",
+      "description": "复制指定联系人的手机号码到系统剪贴板。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"name\":\"<联系人姓名，支持模糊匹配>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 58
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_open_my_business_card",
+      "description": "打开我的名片（本地个人档案）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 64
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_open_blocked_number_list",
+      "description": "打开黑名单管理界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 74
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_add_number_to_blocked_list",
+      "description": "将指定的号码加入黑名单数据库。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要加入黑名单的电话号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 80
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_delete_number_from_blocked_list",
+      "description": "从黑名单数据库移除指定的号码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要从黑名单移除的电话号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 86
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "dialer_query_blocked_number",
+      "description": "查询指定的号码是否在黑名单中。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要查询是否在黑名单中的电话号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 92
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_contacts_query",
+      "description": "查询联系人。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 102
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_contacts_delete",
+      "description": "删除联系人，支持按号码、姓名、公司、地址匹配删除。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 108
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_contacts_delete_one",
+      "description": "删除指定号码对应的单个联系人。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要删除联系人的电话号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 114
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_blocked_add_number",
+      "description": "添加号码黑名单。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要添加到黑名单的号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 124
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_blocked_delete_number",
+      "description": "删除黑名单号码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要从黑名单删除的号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 130
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_blocked_query_number",
+      "description": "查询某号码是否为黑名单号码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"number\":\"<要查询是否为黑名单的号码>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 136
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_blocked_open_blocked_number",
+      "description": "打开黑名单管理界面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 142
+    },
+    {
+      "category": "contacts",
+      "categoryTitle": "联系人与黑名单",
+      "method": "tele_dialer_add_last_call_number_to_blocked_list",
+      "description": "将最近一次通话记录号码加入黑名单。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/contacts.md",
+      "sourceLine": 148
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "open_app_by_name",
+      "description": "通过应用显示名称打开应用。",
+      "location": "原目录候选／未逐项定位",
+      "status": "已确认入口；AMOOsic曾被启动签名检查拦截，不能据此判断所有目标",
+      "paramsTemplate": "{\"appName\":\"<应用显示名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 10
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "open_app_by_package",
+      "description": "通过应用包名打开应用。",
+      "location": "原目录候选／未逐项定位",
+      "status": "已实测；参数为packageName，可传className",
+      "paramsTemplate": "{\"packageName\":\"<应用包名>\",\"className\":\"<可选Activity类名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "app.openUrl",
+      "description": "对应 nodes：invokeCommand=\"ability.call\"，invokeParamsJson 为 {\"method\":\"app.openUrl\",\"params\":{\"url\":\"<完整 URL>\"}}（JSON 内注意转义）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"url\":\"https://...\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 28
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "check_app_installed_by_package",
+      "description": "通过packageName检查应用是否已安装。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 36
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "check_app_installed_by_name",
+      "description": "通过appName检查应用是否已安装。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"appName\":\"<应用显示名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 42
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "show_widget_by_package_class",
+      "description": "随机显示一个Widget，也可以通过指定package和className显示特定Widget。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"package\":\"<应用包名>\",\"className\":\"<Widget完整类名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 48
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "common_ability_play_music",
+      "description": "播放音乐，展示音乐小组件。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"songName\":\"<歌曲名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 58
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "aicopilot_play_music",
+      "description": "获取播放音乐的widget。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"keyword\":\"<音乐标题关键字>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 64
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_add_event",
+      "description": "在用户日历中新增一个日程事件。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"title\":\"开会\",\"description\":\"\",\"location\":\"\",\"start_time\":\"2026-03-22 14:00:00\",\"end_time\":\"2026-03-22 15:00:00\",\"reminder_offset\":3}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 76
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_query_event",
+      "description": "在用户日历中根据开始时间和结束时间查询日程。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"start_time\":\"<开始时间，格式YYYY-MM-DD HH:mm:ss>\",\"end_time\":\"<结束时间，格式YYYY-MM-DD HH:mm:ss>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 93
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_add_special_event",
+      "description": "在用户日历中新增一个特殊事件（生日、纪念日、倒数日）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 99
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_delete_event",
+      "description": "在用户日历中根据事件的时间等字段进行删除事件。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"title\":\"<日程标题>\",\"description\":\"<日程描述>\",\"location\":\"<日程地点>\",\"start_time\":\"<开始时间，格式YYYY-MM-DD HH:mm:ss>\",\"end_time\":\"<结束时间，格式YYYY-MM-DD HH:mm:ss>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 105
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_edit_event",
+      "description": "在用户日历中编辑一个日程事件，仅支持修改时间或标题（不能同时修改）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"start_time\":\"<要编辑事件的开始时间，格式YYYY-MM-DD HH:mm:ss>\",\"end_time\":\"<要编辑事件的结束时间，格式YYYY-MM-DD HH:mm:ss>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 111
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_edit_special_event",
+      "description": "在用户日历中编辑一个特殊事件（生日/纪念日/倒数日），支持修改时间、标题或提醒设置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"type\":\"<事件类型，1=生日，2=纪念日，3=倒数日>\",\"title\":\"<待编辑事件的原标题>\",\"date_time\":\"<待编辑事件的原时间，格式YYYY-MM-DD HH:mm:ss>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 117
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_delete_special_event",
+      "description": "在用户日历中删除特殊事件（生日、纪念日、倒数日）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"start_time\":\"<开始时间，格式YYYY-MM-DD HH:mm:ss>\",\"end_time\":\"<结束时间，格式YYYY-MM-DD HH:mm:ss>\",\"event_types\":\"<事件类型列表，1=生日，2=纪念日，3=倒数日>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 123
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_open_new_edit_event_activity",
+      "description": "打开添加日程页面（仅打开，不新增内容）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 129
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_open_almanac_detail_activity",
+      "description": "打开黄历详情页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 135
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_open_horoscope_detail_activity",
+      "description": "打开星座详情页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 141
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_open_general_settings",
+      "description": "打开日历设置页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 147
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "calendar_query_special_event",
+      "description": "查询特殊事件（生日/纪念日/倒数日）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"start_time\":\"<YYYY-MM-DD HH:mm:ss>\",\"end_time\":\"<YYYY-MM-DD HH:mm:ss>\",\"event_types\":\"<事件类型列表，1=生日，2=纪念日，3=倒数日>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 153
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "common_ability_get_screen_size",
+      "description": "获取当前手机屏幕尺寸。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 165
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "common_ability_get_app_versioncode",
+      "description": "通过packageName获取应用的versionCode。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"packageName\":\"<应用包名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 171
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "security_packageinstaller_uninstall",
+      "description": "卸载指定应用。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"appLabel\":\"<应用名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 183
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "evaluate_expression",
+      "description": "根据数学表达式字符串计算结果，三角函数默认角度制。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"expression\":\"<算式，如2+3*4、sin(30)、sqrt(2)\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 195
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_open_recording",
+      "description": "打开录音机并开始录音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"params\":\"录音\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 207
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_open_search",
+      "description": "打开录音机搜索页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"params\":\"搜索\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 213
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_open_edit_by_position",
+      "description": "打开录音机编辑第N个录音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"index_record\":\"<录音位置>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 219
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_open_edit_by_name",
+      "description": "打开录音机编辑命名为X的录音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"record_name\":\"<录音名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 225
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_delete_file_by_position",
+      "description": "打开录音机删除第N个录音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"index_record\":\"<删除位置>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 231
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_delete_file_by_name",
+      "description": "打开录音机删除命名为X的录音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"record_name\":\"<录音名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 237
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_open_recoginition_by_position",
+      "description": "打开录音机转写第N个录音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"index_record\":\"<录音位置>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 243
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "recorder_open_recoginition_by_name",
+      "description": "打开录音机转写命名为X的录音。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"record_name\":\"<录音名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 249
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "toolbox_open_magnifier_activity",
+      "description": "打开工具箱放大镜页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 261
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "toolbox_open_compass_activity",
+      "description": "打开工具箱指南针页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 267
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "toolbox_open_mirror_new_activity",
+      "description": "打开工具箱镜子页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 273
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "toolbox_open_decibel_activity",
+      "description": "打开工具箱分贝仪页面，查看当前分贝数值。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 279
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "open_tool_sos",
+      "description": "打开工具箱里的SOS闪烁灯功能。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 285
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "get_current_decibel",
+      "description": "获取当前分贝值。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 291
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "feedback_submit_question",
+      "description": "提交用户问题反馈到帮助与反馈系统。系统会自动收集设备信息（机型、系统版本等）并上传。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"content\":\"<问题描述>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 303
+    },
+    {
+      "category": "app_device",
+      "categoryTitle": "应用、设备、日历与实用工具",
+      "method": "renderTemplate",
+      "description": "UI模板渲染。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"type\":\"<模板页面，如摄影攻略:shoot_guide_detail>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/app_device.md",
+      "sourceLine": 315
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_latest_media",
+      "description": "获取本地设备中最新创建的媒体文件（图片或视频）的完整路径。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 10
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_media_by_time_range",
+      "description": "按时间范围查询视频或图片。注意：必须先获取当前系统时间后再调用，严禁使用硬编码日期。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"startTime\":\"<开始时间，格式YYYY-MM-DD HH:mm:ss>\",\"endTime\":\"<结束时间，格式YYYY-MM-DD HH:mm:ss>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_intelligent_search",
+      "description": "对本地相册的媒体资源进行语义智能搜索。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"search_content\":\"<搜索内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 22
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_photo_info",
+      "description": "获取照片详细信息，包括宽高、文件大小、文件名、拍摄时间、相机型号、焦距、ISO、光圈、快门速度、GPS 信息等。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 28
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_video_info",
+      "description": "获取视频详细信息，包括宽高、文件大小、文件名、时长（毫秒）、码率、音频采样率等。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<视频文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 34
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_add_picture_text",
+      "description": "在图片上添加文字，系统会自动读取图片真实宽高并根据位置描述自动计算坐标。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片的文件路径>\",\"value\":\"<需要添加到图片上的文字内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 44
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_add_picture_watermark",
+      "description": "图片水印编辑。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 50
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_add_picture_mosaic",
+      "description": "在图片指定位置添加马赛克效果，支持单区域或多区域打码。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片的文件路径>\",\"regions\":\"<马赛克区域列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 56
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_add_picture_filter",
+      "description": "给图片添加滤镜效果，支持 brightness、contrast、documentary、duotone、fillLight、fisheye、tint 等类型。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片的文件路径>\",\"filterType\":\"<滤镜类型>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 62
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_brightness",
+      "description": "图片亮度编辑。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\",\"brightness\":\"<亮度值，范围-255~255>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 72
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_saturation",
+      "description": "图片饱和度编辑。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\",\"saturation\":\"<饱和度因子，0.0-2.0，1.0为原始>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 78
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_temperature",
+      "description": "图片色温值编辑，负值偏冷色调，正值偏暖色调。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\",\"temperature\":\"<色温值，范围-100到100>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 84
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_sharpen",
+      "description": "图片锐化强度编辑，path 必须是具体的图片文件完整路径。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片完整文件路径>\",\"sharpen\":\"<锐化强度，0.0-1.0>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 90
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_reduce_picture_resolution",
+      "description": "降低图片分辨率（仅支持降低，不支持提高）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\",\"reduceResolution\":\"<降低分辨率比率，0.0~1.0>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 96
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_aspect_ratio",
+      "description": "按照指定宽高比对图片进行中心裁剪，仅支持 1:1/4:3/16:9/3:4/9:16 这些比例。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 106
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_degree",
+      "description": "对图片进行旋转操作，旋转角度仅支持 90/180/270 度顺时针方向。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 112
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_flip",
+      "description": "对图片进行翻转操作，支持水平翻转（左右镜像）和垂直翻转（上下镜像）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片的文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 118
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_edit_picture_paint",
+      "description": "图片画笔编辑。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 124
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_open_picture_editor",
+      "description": "打开图片编辑页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 130
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_ai_extend_image",
+      "description": "打开图片编辑页并直接进入 AI 扩图能力。支持传入本地图片文件路径，也支持 file:// 与 content:// URI。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 136
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_open_video_editor",
+      "description": "打开视频编辑页面。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<视频文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 146
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_open_video_player",
+      "description": "打开视频播放器。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<视频路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 152
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_video_editor_start",
+      "description": "启动视频编辑器卡片。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"medias\":\"<视频编辑需要的素材路径列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 158
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_video_clip_arrangement",
+      "description": "将相册的图片或视频自动生成视频剪辑草稿。优先不传 medias 参数，由用户在相册中主动选择素材；禁止默认或自动使用“最近素材”发起剪辑。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"medias\":\"<自动生成视频剪辑草稿需要的素材路径列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 164
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_create_highlight_task",
+      "description": "创建高光LivePhoto生成任务卡片，用户点击按钮后选择视频，AI分析并生成LivePhoto文件。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 170
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_create_voiceover_task",
+      "description": "创建口播创作任务卡片。该能力固定使用空参数调用（params='{}'），由用户在相册中主动选择素材后再开始分析与生成；禁止默认或自动使用“最近素材”发起口播剪辑。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 176
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_create_album",
+      "description": "新建相册。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"albumName\":\"<相册名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 186
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_delete_album",
+      "description": "删除相册。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"albumName\":\"<相册名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 192
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_copy_files_to_album",
+      "description": "拷贝图片到相册。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"albumName\":\"<相册名称>\",\"filePaths\":[\"<文件路径1>\",\"<文件路径2>\"]}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 198
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_delete_media_files",
+      "description": "将媒体文件移动到回收站（非永久删除），支持批量清理媒体文件。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"filePaths\":\"<要删除的媒体文件路径列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 204
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_move_media_to_album",
+      "description": "移动图片到相册。将指定的图片或视频移动到目标相册，如果目标相册不存在则先创建相册。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"filePath\":\"<媒体文件路径>\",\"albumName\":\"<目标相册名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 210
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_hide_album",
+      "description": "隐藏相册。将相册中的所有图片和视频隐藏，同时相册本身也从相册列表中隐藏。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"albumName\":\"<相册名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 216
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_set_album_cover",
+      "description": "设置相册封面。将指定的图片设置为相册的封面图片。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"albumName\":\"<相册名称>\",\"coverFilePath\":\"<封面图片路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 222
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_rename_media",
+      "description": "重命名媒体文件。将指定的图片或视频文件重命名为新的名称。newName 可不带扩展名，系统会自动保留原文件扩展名。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<媒体文件路径>\",\"newName\":\"<新文件名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 228
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_copy_media",
+      "description": "复制媒体文件到指定位置。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"sourcePath\":\"<源文件路径>\",\"destinationPath\":\"<目标文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 234
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_move_to_folder",
+      "description": "移动媒体文件到指定文件夹。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<源文件路径>\",\"folderPath\":\"<目标文件夹路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 240
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_hide_media",
+      "description": "隐藏媒体文件，从相册中移除但不删除。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<媒体文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 246
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_unhide_media",
+      "description": "取消媒体文件隐藏，恢复显示到相册中。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<媒体文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 252
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_share_media",
+      "description": "分享媒体文件，弹出系统分享对话框。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<媒体文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 258
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_favorite_media",
+      "description": "收藏或取消收藏媒体文件。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<媒体文件路径>\",\"isFavorite\":\"<是否收藏，true 或 false>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 264
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_compress_media",
+      "description": "压缩媒体文件，支持图片和视频压缩。压缩后的文件保存在系统图片目录的 compressed 文件夹下，返回压缩后的文件路径。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<媒体文件路径>\",\"quality\":\"<压缩质量，1-100，默认值需根据实际情况设定>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 270
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_set_wallpaper",
+      "description": "将指定路径的图片设置为手机壁纸。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<图片文件路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 276
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_update_intent_understand_card",
+      "description": "更新意图理解任务卡片内容（包含思考过程、意图理解内容）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"taskRequestBody\":\"<JSON字符串，与视频剪辑Agent约定的数据结构>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 286
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_update_material_analysis_card",
+      "description": "更新素材分析任务卡片内容（包含思考过程、分析进度、分析结果、高光提取内容）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"taskRequestBody\":\"<JSON字符串，与视频剪辑Agent约定的数据结构>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 292
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_update_story_construct_card",
+      "description": "更新故事构造任务卡片内容（包含思考过程、故事结构）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"taskRequestBody\":\"<JSON字符串，与视频剪辑Agent约定的数据结构>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 298
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_update_video_output_card",
+      "description": "更新视频输出任务卡片内容（包含思考过程、视频草稿工程文件列表）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"taskRequestBody\":\"<JSON字符串，与视频剪辑Agent约定的数据结构>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 304
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_create_auto_edit_video_task",
+      "description": "视频自动剪辑（AI 剪辑）优先不传 mediaPaths 参数，或传空数组，由用户在任务卡片中主动选择素材；禁止默认或自动使用“最近素材”直接发起剪辑。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"mediaPaths\": \"<本地图片或视频的完整路径列表；不传或空数组表示由用户在任务卡片中选择素材>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 310
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_sticker_columns",
+      "description": "获取相册中贴纸类目。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 320
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_stickers",
+      "description": "获取相册中指定类目的贴纸列表，支持查询多个类目。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"columnIds\":\"<要查询的指定的贴纸类目ID的列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 326
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_local_stickers",
+      "description": "获取相册本地的贴纸列表，该贴纸是从抠图中添加的。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 332
+    },
+    {
+      "category": "media_gallery",
+      "categoryTitle": "相册与媒体编辑",
+      "method": "gallery_get_style_templates",
+      "description": "获取风格转换的模版列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/media_gallery.md",
+      "sourceLine": 338
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "batch_file_upload",
+      "description": "执行文件上传。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"files\":\"<要上传的文件URI列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 10
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "batch_file_upload_return_all",
+      "description": "执行文件上传，返回所有结果。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"files\":\"<要上传的文件URI列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "batch_file_upload_all_progress",
+      "description": "执行文件上传，并返回实时进度。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"files\":\"<要上传的文件URI列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 22
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "common_ability_clipboard_text",
+      "description": "获取粘贴板文本内容。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 28
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "phone_note_add",
+      "description": "在笔记应用中添加一个新的笔记。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"content\":\"<笔记的内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 38
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "phone_note_access",
+      "description": "根据关键词和最近的时间范围访问和搜索笔记应用中的笔记。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"keyword\":\"<搜索笔记的关键词>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 44
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "phone_note_edit",
+      "description": "通过标题查找指定笔记，并向其内容末尾追加新的文字内容。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"content\":\"<向笔记中追加的新内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 50
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "phone_note_remind_sub",
+      "description": "访问和查询已设置提醒信息的笔记。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 56
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "phone_note_todo_add",
+      "description": "在笔记应用中添加一条新的待办事项（Todo），支持设置标题、正文、提醒时间和地点，并支持子任务。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"content\":\"<待办事项的详细描述或正文内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 66
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "phone_note_todo_complete",
+      "description": "通过标题将最近一条匹配到的待办事项标记为已完成。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"title\":\"<待办事项的标题>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 72
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "phone_note_todo_access",
+      "description": "从笔记应用中根据关键词和最近的时间范围访问和查询待办事项。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"keyword\":\"<搜索待办事项的关键词>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 78
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_safe_delete",
+      "description": "安全删除文件或目录到可恢复回收站。删除手机外部存储文件时优先使用此能力，禁止用 rm 或 shell 删除替代。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<外部存储文件或目录原始路径>\",\"recursive\":true}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 104
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_restore",
+      "description": "按原始路径从回收站恢复文件或目录。目标路径已存在时不会覆盖。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"path\":\"<删除前的外部存储原始路径>\",\"recursive\":true}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 110
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_path_get",
+      "description": "获取文件路径URI。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"file_uri\":\"<文件URI>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 116
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_size_get",
+      "description": "获取文件大小。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"file_uri\":\"<文件URI>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 122
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_create_time_get",
+      "description": "获取文件创建时间。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"file_uri\":\"<文件URI>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 128
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_update_time_get",
+      "description": "获取文件更新时间。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"file_uri\":\"<文件URI>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 134
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_detail_get",
+      "description": "获取文件详细信息。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"file_uri\":\"<文件URI>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 140
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "folder_create",
+      "description": "创建文件夹。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"folderName\":\"<文件夹名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 146
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_create",
+      "description": "创建文件。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"fileName\":\"<文件名称>\",\"folderName\":\"<所在文件夹名>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 152
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_search",
+      "description": "文件搜索。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"keywords\":\"<搜索关键词>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 158
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_apk_list",
+      "description": "查询APK文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 164
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_compress_list",
+      "description": "查询压缩类文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 170
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_document_list",
+      "description": "查询文档类文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 176
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_voice_list",
+      "description": "查询音频类文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 182
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_video_list",
+      "description": "查询视频类文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 188
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_download_list",
+      "description": "查询下载文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 194
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_weixin_list",
+      "description": "微信类文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 200
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_browser_list",
+      "description": "查询浏览器缓存文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 206
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_bluetooth_list",
+      "description": "查询蓝牙传输文件列表。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 212
+    },
+    {
+      "category": "file_memory",
+      "categoryTitle": "文件、笔记与待办",
+      "method": "file_move",
+      "description": "文件移动。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"srcPath\":\"<源文件路径>\",\"desPath\":\"<目标路径>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/file_memory.md",
+      "sourceLine": 218
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "get_current_location",
+      "description": "获取设备当前实时地理位置（城市／区域级）",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_text_search",
+      "description": "关键词搜索 API，根据用户输入的关键词进行 POI 搜索，并返回相关信息。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"keywords\":\"<搜索关键词>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 33
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_around_search",
+      "description": "周边搜索，根据关键词和坐标，搜索出指定半径范围内的 POI。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"keywords\":\"<搜索关键词>\",\"location\":\"<坐标>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 39
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_search_detail",
+      "description": "查询关键词搜索或周边搜索获取到的 POI ID 的详细信息。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"id\":\"<POI ID>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 45
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_direction_driving",
+      "description": "驾车路径规划，根据起终点经纬度坐标规划驾车方案。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"origin\":\"<起点坐标>\",\"destination\":\"<终点坐标>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 51
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_direction_walking",
+      "description": "步行路径规划，规划 100km 以内的步行路线方案。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"origin\":\"<起点坐标>\",\"destination\":\"<终点坐标>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 57
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_direction_bicycling",
+      "description": "骑行路径规划，会考虑天桥、单行线、小路等情况，最大支持 500km。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"origin\":\"<起点坐标>\",\"destination\":\"<终点坐标>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 63
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_direction_transit_integrated",
+      "description": "综合公共交通路线规划，包含火车、公交、地铁等方式。跨城市场景必须传起点城市和终点城市。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"origin\":\"<起点坐标>\",\"destination\":\"<终点坐标>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 69
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_schema_navi",
+      "description": "Schema 唤起客户端导航页面，根据终点经纬度返回拼装好的客户端唤起 URI。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"lon\":\"<终点经度>\",\"lat\":\"<终点纬度>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 75
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_schema_take_taxi",
+      "description": "唤起高德地图进行打车，直接显示链接，不需要总结。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"dlat\":\"<终点纬度>\",\"dlon\":\"<终点经度>\",\"dname\":\"<终点名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 81
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_schema_personal_map",
+      "description": "将行程规划结果在高德地图显示，返回高德地图打开的 URI 链接，该结果不需总结，直接返回。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"lineList\":\"<行程位置点列表>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 87
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_geo",
+      "description": "将详细的结构化地址或地标名称转换为高德经纬度坐标。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"address\":\"<详细地址>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 93
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_regeocode",
+      "description": "将高德经纬度坐标转换为行政区域和地址信息。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"location\":\"<高德经纬度坐标>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 99
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_ip_location",
+      "description": "IP 定位，根据用户输入的 IP 地址定位 IP 所在位置。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"ip\":\"<IP地址>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 105
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_distance",
+      "description": "测量两个经纬度坐标之间的距离，支持驾车、步行以及球面距离测量。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"origins\":\"<起点坐标>\",\"destination\":\"<终点坐标>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 111
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "maps_weather",
+      "description": "根据城市名称或高德 adcode 查询指定城市的天气。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"city\":\"<城市名称或adcode>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 117
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "weatherInfo",
+      "description": "查询天气（高德API，通过城市名称查询）。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"city\":\"<需要查询天气的城市名称>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 124
+    },
+    {
+      "category": "map_navigation",
+      "categoryTitle": "定位、地图与导航",
+      "method": "kesong_shoot_search",
+      "description": "可拍摄位搜索。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"query\":\"<摄位搜索查询，如摄影行-\\\"海岸来信\\\"服务区>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/map_navigation.md",
+      "sourceLine": 130
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "cron create",
+      "description": "创建定时任务，设置 cron 表达式和要执行的 prompt。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"expression\":\"<cron表达式>\",\"prompt\":\"<定时执行的提示词>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 13
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "cron list",
+      "description": "查看所有已创建的定时任务。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 19
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "cron delete",
+      "description": "删除指定的定时任务。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"id\":\"<任务ID>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 25
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "gateway",
+      "description": "Agent 网关管理。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"action\":\"<操作类型>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 31
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_get_current_time_zone",
+      "description": "获取当前时间、位置和时区。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 43
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_add",
+      "description": "创建新闹钟。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"hour\":\"<闹钟小时，0-23>\",\"minute\":\"<闹钟分钟，0-59>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 49
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_delete",
+      "description": "按时间删除已有闹钟。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"hour\":\"<要删除闹钟的小时，0-23>\",\"minute\":\"<要删除闹钟的分钟，0-59>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 55
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_disable",
+      "description": "禁用所有闹钟。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 61
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_get_enable",
+      "description": "获取所有已启用的闹钟。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 67
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_delete_all",
+      "description": "永久删除所有闹钟，不可撤销。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 73
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_snooze",
+      "description": "暂停所有正在响铃的闹钟（使用各闹钟已配置的贪睡时长）。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 79
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_get_current_time_by_city",
+      "description": "从世界时钟列表中获取指定城市的当前时间。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"city\":\"<世界时钟城市ID、本地化或英文城市名、或时区字符串>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 85
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "alarm_clock_timer_add",
+      "description": "启动一个新的倒计时计时器。",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"seconds\":\"<倒计时秒数，1-86400>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 91
+    },
+    {
+      "category": "scheduled_tasks",
+      "categoryTitle": "时钟、定时任务与网关",
+      "method": "get-current-time",
+      "description": "获取当前时间（含星期），必须在需要日期/时间信息时调用此工具，不可依赖训练数据中的日期认知。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/scheduled_tasks.md",
+      "sourceLine": 101
+    },
+    {
+      "category": "web_search",
+      "categoryTitle": "网络搜索与网页",
+      "method": "web_search",
+      "description": "关键词网页搜索。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"query\":\"<搜索关键词>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/web_search.md",
+      "sourceLine": 10
+    },
+    {
+      "category": "web_search",
+      "categoryTitle": "网络搜索与网页",
+      "method": "web_fetch",
+      "description": "抓取指定 URL 的网页内容。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"url\":\"<目标网页URL>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/web_search.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "web_search",
+      "categoryTitle": "网络搜索与网页",
+      "method": "bing_search",
+      "description": "Bing 搜索引擎关键词搜索。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"query\":\"<搜索关键词>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/web_search.md",
+      "sourceLine": 22
+    },
+    {
+      "category": "web_search",
+      "categoryTitle": "网络搜索与网页",
+      "method": "stepsearch-public",
+      "description": "步骤式深度搜索（多步推理搜索）。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"query\":\"<搜索问题>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/web_search.md",
+      "sourceLine": 28
+    },
+    {
+      "category": "web_search",
+      "categoryTitle": "网络搜索与网页",
+      "method": "fetch_trending_news",
+      "description": "获取百度、头条热榜资讯。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/web_search.md",
+      "sourceLine": 34
+    },
+    {
+      "category": "web_search",
+      "categoryTitle": "网络搜索与网页",
+      "method": "diandian_share_fetch",
+      "description": "获取点点分享链接对应的内容数据。点点是安装在手机内的社交分享 App，该工具用于解析点点分享链接并返回其内容。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"url\":\"<点点的分享链接>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/web_search.md",
+      "sourceLine": 40
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "sessions_list",
+      "description": "列出所有会话。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 10
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "sessions_history",
+      "description": "获取指定会话的历史记录。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"session_id\":\"<会话ID>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 16
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "sessions_send",
+      "description": "向指定会话发送消息。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"session_id\":\"<会话ID>\",\"message\":\"<消息内容>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 22
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "sessions_spawn",
+      "description": "创建新会话。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 28
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "session_status",
+      "description": "获取会话状态。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"session_id\":\"<会话ID>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 34
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "exec",
+      "description": "执行命令。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"command\":\"<要执行的命令>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 40
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "bash",
+      "description": "执行 Bash Shell 命令。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"command\":\"<Bash命令>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 46
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "process",
+      "description": "进程管理。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"action\":\"<操作类型，支持list/kill等>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 52
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "assistant_get_voice_list",
+      "description": "读取当前TTS引擎支持的音色列表，查询当前说话支持哪些声音音色。优先调用该原子能力。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 64
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "assistant_change_voice_id",
+      "description": "切换说话声音，切换回复的声音音色，换个TTS合成使用的音色，让TTS引擎使用指定音色朗读，不需要用户手动切换。优先调用该原子能力。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"voice_id\":\"<音色ID，必须是mcp tool[assistant_get_voice_id]返回的音色之一>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 70
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "get_user_profile",
+      "description": "获取用户记忆偏好。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"accountId\":\"<账号ID>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 80
+    },
+    {
+      "category": "session_runtime",
+      "categoryTitle": "会话与运行时",
+      "method": "flow_workflow_call",
+      "description": "调用flow workflow。",
+      "location": "云侧参考",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"workflow_id\":\"<工作流ID>\",\"data\":\"<发送数据JSON对象>\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/session_runtime.md",
+      "sourceLine": 86
+    },
+    {
+      "category": "log_report",
+      "categoryTitle": "日志录制",
+      "method": "start_record_log",
+      "description": "开始采集通用或指定类别的手机日志",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{\"type\":\"generic\"}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/log_report.md",
+      "sourceLine": 37
+    },
+    {
+      "category": "log_report",
+      "categoryTitle": "日志录制",
+      "method": "stop_record_log",
+      "description": "停止当前日志录制并保存；文档称系统会恢复通用录制",
+      "location": "原目录候选／未逐项定位",
+      "status": "仅文档候选，未逐项实测",
+      "paramsTemplate": "{}",
+      "source": ".local/amoo/claw-openclaw/package/skills/android-abilities/log_report.md",
+      "sourceLine": 69
+    },
+    {
+      "category": "gui",
+      "categoryTitle": "通用GUI自动化",
+      "method": "gui_agent",
+      "description": "第三方App内多步界面交互；当前发行版执行总闸关闭",
+      "location": "端侧入口",
+      "status": "不可用：实机返回GUI自动化功能暂未开放",
+      "paramsTemplate": "{\"app_name\":\"<App名>\",\"task\":\"<任务>\"}",
+      "source": "本工作区实机调查报告",
+      "sourceLine": null
+    },
+    {
+      "category": "appstore",
+      "categoryTitle": "商店原子能力（补充）",
+      "method": "appstore_search_app",
+      "description": "在自带应用商店搜索应用，不触发安装",
+      "location": "端侧入口",
+      "status": "已实测，只搜索",
+      "paramsTemplate": "{\"keyword\":\"<应用名>\"}",
+      "source": "本工作区实机调查报告",
+      "sourceLine": null
+    },
+    {
+      "category": "appstore",
+      "categoryTitle": "商店原子能力（补充）",
+      "method": "appstore_install_app",
+      "description": "通过自带应用商店下载安装应用；精确匹配应用展示名称",
+      "location": "端侧入口",
+      "status": "已实测，商店下载安装QQ音乐成功",
+      "paramsTemplate": "{\"appName\":\"QQ音乐\"}",
+      "source": "本工作区实机调查报告",
+      "sourceLine": null
+    },
+    {
+      "category": "executor",
+      "categoryTitle": "本次新增的手机端工具",
+      "method": "executor_open_settings",
+      "description": "直达开发者选项、无线调试、输入法或电池健康页，不切换开关",
+      "location": "端侧入口",
+      "status": "已实测；原生新会话打开无线调试/开发者选项",
+      "paramsTemplate": "{\"page\":\"developer|wireless-debugging|keyboard|battery-health\"}",
+      "source": "本工作区实机调查报告",
+      "sourceLine": null
+    },
+    {
+      "category": "executor",
+      "categoryTitle": "本次新增的手机端工具",
+      "method": "executor_navigate",
+      "description": "返回桌面、上一页或最近任务；home不强制结束进程",
+      "location": "端侧入口",
+      "status": "已实测；原生新会话home/back；recents未逐项测",
+      "paramsTemplate": "{\"action\":\"home|back|recents\"}",
+      "source": "本工作区实机调查报告",
+      "sourceLine": null
+    },
+    {
+      "category": "executor",
+      "categoryTitle": "本次新增的手机端工具",
+      "method": "executor_search_settings",
+      "description": "按关键词查询本机设置静态索引",
+      "location": "端侧入口",
+      "status": "已实测；原生调用查询无线调试",
+      "paramsTemplate": "{\"query\":\"无线调试\"}",
+      "source": "本工作区实机调查报告",
+      "sourceLine": null
+    },
+    {
+      "category": "executor",
+      "categoryTitle": "本次新增的手机端工具",
+      "method": "executor_get_tool_status",
+      "description": "检查本机执行服务是否就绪",
+      "location": "端侧入口",
+      "status": "已实测；原生调用成功",
+      "paramsTemplate": "{}",
+      "source": "本工作区实机调查报告",
+      "sourceLine": null
+    }
+  ],
+  "registeredAppFunctions": [
+    {
+      "package": "com.stepos.common.ability.proxy",
+      "functionId": "com.stepos.common.ability.appfunctions.alipay.AlipayXuiServiceFunctions#thirdPartyAbilityAlipayXuiService",
+      "schemaName": "alipay_xui_service",
+      "description": "# description\n 支付宝 xUI「服务执行」原子能力入口\n\n # return\n 返回 [AlipayXuiServiceResult]：`code=0`（且 `_meta.metas` 中 `executionState=COMPLETED`）为执行成功；\n 10001/10002/10003/10004 入参非法（10004 为缺少有效 `params.message.contextId`、任务未启动）；\n 11002/11003 证书/设备；12xxx/13xxx 握手、14xxx/15xxx 加解密；\n 16001 超时；17001 未安装；17002 未登录；**17106 需 xUI 授权 / 17107 需定位授权**（授权 hold\n 超时/超限时才返回，`_meta.metas` 中带 `authType`）；**17108 不支持该意图 / 17109 执行失败 / 17110 执行取消 /\n 17111 有不同 contextId 的 Session 在途且它尚未返回过结果 / 17113 用户拒绝 xUI 授权**（弹授权卡后用户点拒绝、\n 回 authResult(false) 后支付宝以 105 not_supported 收尾——与 17108 区分，`message`=支付宝 xUI 授权被拒绝，\n 请授权 xUI 执行）（17111：旧会话已返回过结果——例如 deeplink\n 早返——则不给此码，新请求直接抢占旧会话）；支付宝跑完代操作但目标客观不存在/无相关供给\n （回包 `queryStatus.errorCode=1000`，如没有可开的发票、近期没有快递包裹）按**执行成功**返回 `code=0`，\n 结论在 `data` 的 `queryStatus.inferDescription`；\n 18xxx IPC/桥接兜底。业务码均含 [AlipayErrorCode.BUSINESS_CODE_BASE]\n =10000 偏移。`data` 为 A2A 明文回包（deeplink 早返时为 appLink 帧原文；终态返回时为 kind=task\n 终态帧原文）；`_meta.metas` 中 `deeplink` 为本次执行的拉起 deeplink（键见 [AlipayXuiResultMeta]）。",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "目标应用标识。固定 `\"alipay\"`；其它值返 10001 不进 bridge。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "target"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "description": [
+            "A2A JSON-RPC 完整字节流的**标准 base64 字符串**；Token 字段填 `__TOKEN_PLACEHOLDER__`， `params.message.contextId` 必须是调用方提供的非空字符串，否则返回 10004。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "payload"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "description": [
+            "单次调用超时上限（ms）。`<=0` 取 xUI 默认（3 分钟）；受上游 ~35s 插件 deadline 制约，见类 KDoc。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "timeout"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                7
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "com.stepos.common.ability.proxy",
+      "functionId": "com.stepos.common.ability.appfunctions.alipay.AlipayLifeServiceFunctions#thirdPartyAbilityAlipayLifeService",
+      "schemaName": "alipay_life_service",
+      "description": "# description\n 支付宝「服务直达」原子能力入口 —— 覆盖智跃星辰服务直达 P0 场景，让用户在**支付宝**内\n 完成以下明确范围的生活服务。\n\n ## 高频强支持意图（命中即强路由到本能力，勿让给地图/POI/外卖等其它 agent）\n 以下两类是高频核心场景，**只要 query 命中（含出现在复合 query 的任一子句里）就必须强路由到\n 本能力**：\n  1. **充电桩 / 充电站 查找**〔xUI 优先，本能力兜底〕：凡\"搜索 / 找 / 找找 / 查找 / 查 / 看看 /\n     附近 / 周边 / 离我最近 / 最近的\"＋\"充电桩 / 充电站 / 快充 / 超充 / 能充电的地方 / 充电的地方\"\n     ——如\"帮我找找离我最近的充电桩\"\"附近哪有充电站\"\"搜索附近快充\"。**按产品定的优先级，这类\n     query 先路由 xUI 服务执行**（`proxy_third_party_ability_alipay_xui_service`，「找电站」场景），\n     仅当 xUI 返 17108（不支持该意图）或不可用时才回退本能力、由支付宝**车主服务充电地图**承接；\n     但无论落到哪条通道，都不要因为像\"找地点\"就改投地图 / POI / 导航 agent。\n  2. **点饮品 / 点喝的 送到家**：凡\"点 / 来 / 叫 / 买 / 帮我点\"＋\"一杯 / 杯 / 奶茶 / 咖啡 / 喝的 /\n     饮品 / 茶 / 果茶\"＋（常带）\"外送 / 送到家 / 送到公司 / 配送 / 到家里\"——如\"帮我点杯喝的到\n     家里\"\"点杯奶茶外送\"\"来杯咖啡送到公司\"。由支付宝**品牌点餐**（瑞幸 / 喜茶 / 蜜雪冰城 /\n     Manner）承接。**注意优先级**：品牌餐饮 / 饮品点单已被 xUI「服务执行」\n     （`proxy_third_party_ability_alipay_xui_service`）覆盖且**优先**，本能力只作兜底。**仅限\n     饮品**：正餐 / 麦当劳 / 火锅 等通用外卖不在本能力范围（属 xUI 服务执行）。\n\n ## 与 xUI「服务执行」场景重合时让位（xUI 优先）\n 下列场景 xUI 服务执行（`proxy_third_party_ability_alipay_xui_service`）已覆盖且**优先级更高**\n （它是代替用户把事办完，本能力只是把用户带到卡片/页面）：**品牌餐饮 / 饮品点单与外送**（瑞幸 /\n 喜茶 / 蜜雪冰城 / Manner 等；**星巴克仅 xUI 供给**，本能力从未供给、无兜底）、**易捷加油**\n （查油价 / 钱包充值）、**找充电桩 / 充电站 /\n 快充 / 超充**（含车主服务充电地图的同类\"找电站\"诉求）、**挂号与在线问诊**、**居住证办理**、\n **参保证明 / 个人社保证明查询打印**、**公积金账号信息与缴存明细**、**查验电子身份证**、\n **话费充值**。这些 query 先路由 xUI，仅当 xUI 返 17108（不支持该意图）或不可用时才回退本能力。\n 其中**瑞幸 / 喜茶 / 蜜雪冰城 / Manner / 星巴克在 xUI 侧的全部供给场景**（到店取餐 / 外送 / 查订单 /\n 开发票 等，逐条见 xUI 能力描述）**以及科室挂号与线上问诊**属 xUI 供给表「测试优先级 1」的验收集\n （最高优先级），**本能力一律不得抢接**，只在 xUI 明确不支持或不可用时兜底。\n\n 本能力**独有、不受让位影响**的部分继续强路由：生活缴费（水 / 电 / 燃气 / 热力）、车主服务\n （违章 / 停车 / 充电卡 / 换电网点 / 充电记录——**\"找充电桩 / 充电站\"已让位 xUI，不在此列**）、\n 金融服务、支付设置、社保余额与\n 参保信息与缴费记录、公积金余额 / 提取明细 / 贷款余额、身份证补办换领与解除挂失、签证签注、医保 /\n 就诊记录 / 体检 / 导航导诊 / 附近医院药店 / 异地就医、境外购物退税、流量购买与话费查询，以及\n **滴滴出行**（打车 / 预约打车 / 接送机 / 替他人打车 / 代驾 / 包车 / 站点巴士 / 快送跑腿 / 青桔\n 单车电车 / 开发票）——xUI 侧**出行行业已整体转非 P0**（打车类与「找共享单车」都不再供给），这块\n **仍由本能力独家承接**，此类 query 直接走本能力，不必先试 xUI。\n 另**「查菜鸟快递」**（指名菜鸟的查快递订单 / 查包裹）也由**本能力独家承接**：菜鸟快递小程序已把\n 订单页与首页合并，进入首页即直接展示对应订单，天然就是服务直达、不存在可执行的代操作步骤，\n xUI 侧已不再按代操作供给该场景，此类 query 直接走本能力，不必先试 xUI。**仅限指名菜鸟的查单**\n ——寄快递、顺丰查包裹、支付宝我的快递查包裹均不归本能力（见 negative_samples）。\n\n **仅支持下列能力，超出范围的意图不应路由到本能力**：\n **生活缴费**（自来水 / 电力 / 燃气 / 热力，含缴纳、开发票、查明细、代扣、绑定户号）、\n **电信通讯**（话费充值〔xUI 优先〕 / 查话费账单 / 查话费余额 / 设置余额提醒 / 流量购买 / 流量查询）、\n **车主服务**（查违章 / 停车费缴纳 / 查停车缴费记录 / 找停车场 / 找充电桩〔xUI 优先〕 /\n 搜索附近充电桩〔xUI 优先〕 / 查找最近充电站〔xUI 优先〕 / 充电站充电桩查询搜索〔xUI 优先〕 /\n 充电卡余额 / 绑定充电卡 / 换电网点 / 充电记录）、\n **金融服务**（基金持仓 / 自选基金 / 黄金持仓 / 支付宝账单 / 信用卡账单 / 花呗交易记录 /\n 支付记录 / 记一笔）、\n **支付设置**（小额免密 / 免密支付管理 / 先用后付管理 / 重置支付密码 / 调整扣款顺序 /\n 收货地址查询 / 支付设置）、\n **政务服务**（社保：账户余额 / 参保信息 / 缴费记录 / 参保证明〔xUI 优先〕 / 养老保险；公积金：\n 账户余额 / 提取明细 / 缴存明细〔xUI 优先〕 / 贷款余额；公安：补办换领身份证 / 查验电子身份证\n 〔xUI 优先〕 / 解除挂失 / 居住证〔xUI 优先〕 /\n 签证签注办理与缴费 / 申办民航临时乘机证明；民政民生：车辆临时通行证申领）、\n **医疗健康·就医就诊**（挂号〔xUI 优先〕：医院 / 科室 / 医生 / 挂号单；医保：余额 / 使用记录 /\n 缴费记录 / 医保码 / 参保证明 / 账号绑定；就诊记录 / 病历 / 报告 / 住院费用 / 门诊缴费；\n 在线问诊〔xUI 优先〕（含宠物）；\n 体检预约与结果；导航导诊；附近医院药店；异地就医；住院护工预约；医学检测预约）、\n **酒店旅游·出境旅游**（境外购物退税 / 签证办理与缴费）、\n **饮品服务直达品牌跳转**〔以下整块 xUI 优先，本能力兜底〕（仅点饮品 / 奶茶 / 咖啡外送到家：\n Manner 咖啡、喜茶 GO、蜜雪冰城、瑞幸咖啡——点饮品 / 外送 / 送到家 / 到店取餐 / 取餐号 / 查订单 /\n 开发票；易捷加油：查油价 / 钱包充值 / 找电站）、\n **物流快递服务直达**〔本能力独家承接，xUI 已不再按代操作供给该场景〕（**仅限指名菜鸟**的查快递\n 订单 / 查包裹——菜鸟快递小程序已把订单页与首页合并，进入首页即直接展示订单，属天然直达；\n 寄快递与其它品牌查包裹不在此列）、\n **滴滴出行服务直达**〔本能力独家承接，xUI 出行行业整体不供给〕（打车 / 预约打车 /\n 接送机 / 替他人打车 / 代驾 / 包车 / 站点巴士 / 快送跑腿 / 青桔单车电车——含\"找共享单车 / 附近的\n 单车 / 扫个单车骑\" / 开发票）。\n\n 用户 query 意图落在上述明确列出的服务范围内时，云端才应路由到本能力，让支付宝侧的 AHA\n 智能体完成精准的服务匹配与卡片渲染。工具层负责拉起支付宝 App / ASL 安全握手 /\n AES-GCM 加密透传 / A2A 会话 contextId 缓存复用 / 断连重建，调用方**完全透明**。\n\n ## 复合 / 组合意图务必路由到本能力\n 用户 query **同时包含多个诉求**时，只要其中**任一子诉求**落在上述服务范围内（哪怕还夹带了\n 别的诉求或闲聊），就应路由到本能力，由支付宝侧 AHA 智能体统一编排、依次完成各子任务并汇总\n 卡片——**不要**因为 query 里出现\"顺便 / 再 / 然后 / 还要 / 帮我也\"等连接词、或夹带了看似泛化\n 的诉求，就改投别的 agent、或把 query 拆散只做一半。典型如「先帮我交个电费，再找最近的充电桩」\n ＝ 生活缴费（本能力独有）＋ 车主服务充电地图，含本能力独有子诉求，应整体路由到本能力。\n **但注意让位规则**：若整条 query 的**全部**子诉求都落在上节「xUI 优先」项上（如「找最近的充电桩\n ＋点杯饮品外送到家」两者皆为 xUI 优先项），则先整体路由 xUI，本能力只作兜底。\n\n ## 缴费 / 通讯充值统一由支付宝承接\n 水 / 电 / 燃气（天然气 / 煤气）/ 热力等生活缴费，以及话费充值 / 话费查询 / 流量购买等通讯诉求，\n **即便运营商 App（移动 / 联通 / 电信）、燃气公司 App 等第三方也能办理，也一律由支付宝原子能力\n 承接**——不要因为 query 里出现\"话费 / 燃气 / 天然气 / 煤气 / 移动 / 联通 / 电信\"\n 等运营商或事业单位字样，就改投其它 agent。它们与已能正常路由的\"交电费\"属于**完全同类**的\n 缴费 / 充值意图，路由判定必须一视同仁，不得厚此薄彼。其中**话费充值**由 xUI 服务执行优先承接、\n 本能力兜底；其余（水电燃气热力缴费、话费查询、流量购买）仍由本能力承接。\n\n # positive_samples\n 生活缴费类（自来水 / 电力 / 燃气 / 热力）：\n - \"我要交水费\" / \"帮我交水费\" / \"自来水费缴纳\" / \"查水费明细\" / \"水费开发票\" / \"绑定水费户号\"\n - \"本月电费多少\" / \"交电费\" / \"电费缴纳\" / \"查电费明细\" / \"电费代扣\" / \"绑定电费户号\"\n - \"查燃气费\" / \"燃气费缴纳\" / \"交燃气费\" / \"天然气费\" / \"煤气费\" / \"查一下燃气欠费\" / \"燃气费开发票\" / \"燃气代扣\"\n - \"交暖气费\" / \"热力费缴纳\" / \"供暖费\"\n\n 电信通讯类（\"话费充值\"一项 xUI 优先、本能力兜底，其余本能力承接）：\n - \"话费充值\" / \"给我充 50 话费\" / \"我想充话费\" / \"手机欠费了帮我充一下\" / \"给这个手机号充 100\" /\n   \"移动/联通/电信话费充值\" / \"查话费账单\" / \"这个月话费多少\" / \"话费余额\" / \"话费还剩多少\" / \"设置话费余额提醒\"\n - \"流量购买\" / \"买流量包\" / \"查流量\" / \"剩余流量\" / \"流量不够了买个包\"\n\n 车主服务类：\n - \"查违章\" / \"车辆违章查询\"\n - \"停车费缴纳\" / \"查停车缴费记录\" / \"找停车场\" / \"附近停车场\"\n - 〔xUI 优先，本能力兜底〕\"找充电站\" / \"找充电桩\" / \"帮我找找离我最近的充电桩\" /\n   \"离我最近的充电桩在哪\" / \"附近充电桩\" / \"附近哪有充电站\" / \"搜索附近充电桩\" / \"查一下最近的充电站\" /\n   \"充电站查询\" / \"搜索充电桩\" / \"哪里能充电\" / \"查找快充\" / \"周边超充\" / \"找个能充电的地方\"\n - \"充电卡余额\" / \"绑定充电卡\" / \"换电网点\" / \"充电记录\"\n\n 金融服务类：\n - \"基金持仓\" / \"自选基金\" / \"黄金持仓\"\n - \"支付宝账单\" / \"信用卡账单\" / \"花呗交易记录\" / \"支付记录\" / \"记一笔\"\n\n 支付设置类：\n - \"小额免密\" / \"免密支付管理\" / \"先用后付管理\" / \"重置支付密码\"\n - \"调整扣款顺序\" / \"查收货地址\" / \"支付设置\"\n\n 政务服务类（\"参保证明\" / \"公积金缴存明细\" / \"查验电子身份证\" / \"办居住证\" 四项 xUI 优先、本能力兜底）：\n - \"查社保余额\" / \"参保信息\" / \"社保缴费记录\" / \"参保证明\" / \"养老保险\"\n - \"公积金余额\" / \"公积金提取明细\" / \"公积金缴存明细\" / \"公积金贷款余额\"\n - \"补办身份证\" / \"换领身份证\" / \"查验电子身份证\" / \"身份证解除挂失\" / \"办居住证\"\n - \"签证办理\" / \"签注办理与缴费\" / \"申办民航临时乘机证明\"\n - \"车辆临时通行证申领\"\n\n 医疗健康 / 就医就诊类（\"挂号\" / \"在线问诊\" 两项 xUI 优先、本能力兜底）：\n - \"预约挂号\" / \"协和医院内科挂号\" / \"查挂号单\" / \"医生挂号\"\n - \"医保余额\" / \"医保使用记录\" / \"医保缴费记录\" / \"医保码\" / \"医保参保证明\" / \"绑定医保账号\"\n - \"查就诊记录\" / \"电子病历\" / \"查报告\" / \"住院费用\" / \"门诊缴费\"\n - \"在线问诊\" / \"宠物在线问诊\" / \"体检预约\" / \"查体检结果\"\n - \"医院导航导诊\" / \"附近医院\" / \"附近药店\" / \"异地就医\" / \"住院护工预约\" / \"医学检测预约\"\n\n 酒店旅游 / 出境旅游类：\n - \"境外购物退税\" / \"出境签证办理\" / \"签证缴费\"\n\n 点饮品 / 点喝的到家类〔xUI 优先，本能力兜底〕：\n - \"帮我点杯喝的到家里\" / \"点杯喝的\" / \"来杯喝的\" / \"点杯奶茶\" / \"点杯咖啡\" / \"来杯咖啡送到公司\" /\n   \"点杯饮品外送\" / \"送杯喝的到家\" / \"叫杯奶茶外送\" / \"点杯奶茶送到家\"\n\n 物流快递类〔仅限指名菜鸟的查单，本能力独家承接，不必先试 xUI〕：\n - \"帮我用菜鸟裹裹查一下快递订单\" / \"查一下我菜鸟的快递\" / \"看看菜鸟裹裹里我的包裹\" /\n   \"打开菜鸟看下我的快递订单\" / \"菜鸟快递查订单\"\n\n 服务直达品牌跳转类：\n - 〔xUI 优先，本能力兜底〕\"易捷加油\" / \"石化易电充电\" / \"查油价\"\n - 〔xUI 优先，本能力兜底〕\"Manner 咖啡点餐\" / \"喜茶 GO 到店取餐\" / \"蜜雪冰城雪王外送\" /\n   \"瑞幸咖啡幸运送\" / \"查订单\" / \"开发票\"\n - 〔本能力独家，xUI 出行行业整体不供给〕\"滴滴打车\" / \"预约打车\" / \"接送机\" / \"替他人打车\" / \"代驾\" /\n   \"包车\" / \"站点巴士\" / \"快送跑腿\" / \"青桔单车\" / \"青桔电车\" / \"帮我找辆共享单车\" / \"附近有单车吗\"\n\n 复合 / 组合意图类（含多个子诉求，只要含本能力覆盖的服务即整体路由到本能力）：\n - \"先帮我交个电费，再充 50 话费\"（电费缴纳 + 话费充值）\n - \"看看这个月电费多少，顺便查下我的医保余额\"（电费查询 + 医保余额）\n - \"查下我的支付宝账单，再帮我点杯瑞幸\"（账单查询 + 瑞幸点餐）\n - \"帮我查违章，然后找个能充电的地方\"（违章查询 + 充电桩查询）\n - \"交完燃气费顺便帮我预约个挂号\"（燃气费缴纳 + 预约挂号）\n - \"找个最近的停车场，顺便来杯奶茶\"（找停车场 + 奶茶外送）\n - 上列样例都含**本能力独有**子诉求（电费 / 医保 / 账单 / 违章 / 燃气费 / 停车场），故整体路由本能力。\n   反例：「帮我找找离我最近的充电桩，顺便帮我点杯喝的到家里」「查下附近的充电站，再点杯咖啡送到公司」\n   ——子诉求（找充电桩、饮品外送）**全部**为 xUI 优先项，先整体路由 xUI，本能力只作兜底。\n\n # negative_samples\n 非支付宝生态 / 拉起类（不归本能力）：\n - \"帮我装一下支付宝\" / \"安装支付宝\" → 应走应用商店 `installApp`\n - \"打开支付宝\" / \"启动支付宝\" → 应走 `open_app_by_*` 简单拉起\n - \"微信支付\" / \"微信怎么用\" / \"抖音打不开\" / \"帮我打开微信小程序\" → 非支付宝生态\n - \"扫码支付\" / \"付款码 / 收款码给我看\" → 客户端本地即可，不需要透传 A2A\n - \"今天天气怎么样\" / \"北京天气预报\" → 与支付宝生活服务无关\n - \"支付宝到底安全吗\" / \"支付宝是谁做的\" → 通用问答，不落地具体服务\n\n 超出 P0 服务直达范围（当前能力**不支持**，云端不应路由到本能力）：\n - \"无犯罪记录证明\" / \"一网通办\" / \"户籍办理\" / \"结婚登记\" → 不在政务 P0 范围\n - \"疫苗预约\" / \"HPV 疫苗\" / \"新冠疫苗\" → 不在医疗 P0 范围\n - \"公交乘车码\" / \"地铁乘车码\" / \"ETC 办理\" / \"高速缴费\" / \"高铁票\" / \"机票\" → 不在出行 P0 范围\n - \"车辆年检\" / \"保险续保\" → 不在车主 P0 范围\n - \"酒店预订\" / \"景点门票\" / \"旅游攻略\" / \"杭州有什么好玩的\" / \"景区推荐\" → 不在酒店旅游 P0 范围\n - \"教育教学\" / \"课程预约\" / \"学习打卡\" → 不支持\n - 资金账户转入转出 / 信贷额度查询 / 消费信贷还款 → 不在金融 P0 范围；向他人转款汇款 → 走 xUI 服务执行\n - \"买份保险\" / \"好医保\" / \"车险\" / \"意外险\" / \"保险理赔\" → 不在 P0 范围\n - \"电影票\" / \"演出票\" / \"脱口秀票\" / \"演唱会票\" → 本能力不支持，走 xUI 服务执行（淘票票）\n - \"生活号\" / \"芝麻信用\" → 社交不支持；\"收蚂蚁森林能量\" / \"领蚂蚁庄园饲料\" / \"领芭芭农场肥料\"\n   → 走 xUI 服务执行（这三条属 xUI 测试验收集，本能力不得抢接）\n - \"二手回收\" / \"家电换新\" / \"手机以旧换新\" / \"旧衣回收\" → 本能力不支持，走 xUI 服务执行\n   （飞蚂蚁 / 白鲸鱼回收）\n - \"寄个快递\" / \"上门取件\" / \"查我的快递包裹\" / \"查快递到哪了\" → 本能力不支持，走 xUI 服务执行\n   （菜鸟裹裹 / 顺丰速运 / 支付宝我的快递）。\n   **唯一例外：指名「菜鸟」的查单**（\"帮我用菜鸟裹裹查一下快递订单\"）已改由本能力承接，\n   见 positive_samples；不指名品牌的\"查我的快递包裹 / 查快递到哪了\"仍按上述分发，不要被该例外带走。\n - \"有没有打折的神券\" / \"我想喝瑞幸了，有没有打折的神券\" / \"帮我查下神券核销了没\" /\n   \"附近有什么团购优惠\" / \"周边有什么团购\" → **两条通道都不供给**，云端不要路由到任何一方。\n - \"领支付宝会员积分\" / \"天天秒杀\" / \"深色模式\" → **两条通道都不供给**（xUI 侧已转非 P0，本能力\n   从未供给），云端不要路由到任何一方\n - \"预约易安检\" / \"燃气安检\" → 不在 P0 范围\n - 通用正餐外卖 / 团购套餐 / 优惠券（如\"点外卖\" / \"叫外卖\" / \"点份麦当劳\" / \"订个火锅团购\"，\n   **非指定饮品品牌**）→ 本能力不支持；其中支付宝已供给的品牌点餐（麦当劳 / 汉堡王 /\n   塔斯汀 / 必胜客 / 古茗 / 肯德基 / 淘宝闪购等）走 xUI 服务执行。\"点杯奶茶 / 咖啡 / 饮品 / 喝的 送到家\"\n   等**饮品**诉求由支付宝指定品牌（瑞幸 / 喜茶 / 蜜雪冰城 / Manner / 星巴克）承接，同样\n   **xUI 优先、本能力兜底**（星巴克仅 xUI 供给，本能力无兜底）；这 5 个品牌的全部场景、\n   以及淘宝闪购 9 条供给中的 7 条属 xUI 测试验收集，本能力不得抢接。\n\n # return\n 返回 [AlipayLifeServiceResult]：code=0 数据在 data；10001/10002/10003 调用方入参非法\n （target / payload 空 / base64 解码，需修入参不可重试）；11002 证书链失败；11003 设备不支持\n （<Android 9）；12xxx/13xxx 握手连接·接受阶段（ASL 原始码透传）；14xxx 加密、15xxx 解密；\n 16001 单次超时（默认 10000ms）；17001 支付宝未安装（非 MOCK 模式）；17002 支付宝未登录\n （A2A 回包 noLogin）；17101~17105 A2A 会话非完成态；18001~18009 IPC / 桥接 / 未知 ASL 码兜底；\n 其它见 [AlipayErrorCode]。业务结果码整体加 [AlipayErrorCode.BUSINESS_CODE_BASE]=10000 偏移，\n 避免与云端 a2a-third-party 插件的 6001（整体超时）/ 7001（TRANSPORT_ERR）冲突。\n\n `data` 字段格式：单个 A2A JSON-RPC 响应对象字符串\n `{jsonrpc, id, result:{contextId, status:{state}, artifact:{artifactId, name, parts}, kind, final}}`。\n 工具层把云端一次流式请求收到的**所有** `artifact-update` 帧的 `parts` 合并进同一个\n `result.artifact.parts[]`，并携带终止帧的 `status.state`（`completed / rejected / failed /\n input-required`），使调用方 `new JSONObject(data)` 即可拿到「状态 + 完整卡片/文本」用于渲染，\n 不丢失任何中间卡片 / 文本片段。`error` 帧且无 parts 时透传 `error` 字段。",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "目标应用标识。固定 `\"alipay\"`；其它值视为入参非法返 10001 不进 bridge。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "target"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "description": [
+            "调用方构造好的 A2A JSON-RPC 完整字节流，**经标准 base64 编码后的字符串**。 Token 字段填占位符 `__TOKEN_PLACEHOLDER__`，工具层握手后自动替换。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "payload"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "description": [
+            "单次调用超时上限（ms）。`<=0` 取默认 10000；超时返 16001。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "timeout"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                7
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "life.suk.agenttouch",
+      "functionId": "life.suk.agenttouch.AgentFunctionService#execute",
+      "schemaName": "",
+      "description": "执行 Agent手机控制器 协议批次：tap、inputText、longPress、scroll、swipe、back、home、launchApp。必须提供包含 protocolVersion、requestId、deviceId、deadline、steps 的 JSON。支持后置条件；没有后置条件只返回 action_dispatched，unknown 不会伪装成成功。visualTap 可用真实 frameId + frame snapshotId + 图像坐标点击；visualObserve 请使用独立原子函数。Executes an Agent手机控制器 protocol batch; visualTap uses frame metadata, visualObserve is a separate function.",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "包含 protocolVersion=1、requestId、deviceId、deadline（现在起 60 秒内）、steps（1-20 个动作）的 JSON 字符串。JSON string with protocolVersion=1, requestId, deviceId, deadline within 60 seconds, and 1-20 steps."
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "requestJson"
+          ],
+          "dataTypeMetadata": [
+            {
+              "description": [
+                "Agent手机控制器 协议请求 JSON 字符串。Agent手机控制器 protocol request JSON string."
+              ],
+              "dataTypeReference": [
+                ""
+              ],
+              "objectQualifiedName": [
+                ""
+              ],
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "life.suk.agenttouch",
+      "functionId": "life.suk.agenttouch.AgentFunctionService#observe",
+      "schemaName": "",
+      "description": "读取指定应用的真实无障碍节点树、snapshot 与 display 元信息。仅当应用在本机允许列表中、设备未锁屏且不是敏感窗口时可用。Reads the real accessibility node tree, snapshot and display metadata for an allowed app. Fails for disallowed apps, locked devices or sensitive windows.",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "要观察的应用包名，例如 life.suk.agenttouch。Package name to observe."
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "expectedPackage"
+          ],
+          "dataTypeMetadata": [
+            {
+              "description": [
+                "应用包名，必须在设备本机允许列表中。Android package name; must be in the device allowlist."
+              ],
+              "dataTypeReference": [
+                ""
+              ],
+              "objectQualifiedName": [
+                ""
+              ],
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "life.suk.agenttouch",
+      "functionId": "life.suk.agenttouch.AgentFunctionService#health",
+      "schemaName": "",
+      "description": "读取 Agent手机控制器 设备健康状态：设备 ID、APK 版本、无障碍服务连接、暂停状态与系统 Agent 调用授权。不返回任何凭据或中继配置。Returns device health: device ID, APK version, accessibility connection, pause state and system-agent permission. No credentials or relay configuration are returned.",
+      "enabledByDefault": true,
+      "parameters": []
+    },
+    {
+      "package": "life.suk.agenttouch",
+      "functionId": "life.suk.agenttouch.AgentFunctionService#visualObserve",
+      "schemaName": "",
+      "description": "截取允许列表内当前应用的真实画面，在本机用 bundled 离线 OCR 识别文字，返回 frameId、snapshotId、rotation、屏幕/图像尺寸、坐标映射，以及有界 text / lines（文字、bounds、图像坐标）。原图不返回 URI 或 base64。设备本人必须开启视觉观察。Captures a real screenshot, runs bundled offline OCR on-device, and returns bounded text lines with image coordinates. No image URI or base64 is returned.",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "要截图的允许应用包名。Package name to capture."
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "expectedPackage"
+          ],
+          "dataTypeMetadata": [
+            {
+              "description": [
+                "应用包名，必须在设备本机允许列表中。Android package name; must be in the device allowlist."
+              ],
+              "dataTypeReference": [
+                ""
+              ],
+              "objectQualifiedName": [
+                ""
+              ],
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "com.stepos.appstore",
+      "functionId": "com.stepos.appcenter.appfunctions.AppStoreFunctions#searchApp",
+      "schemaName": "",
+      "description": "# description\n 在应用商店里**搜索 / 查询 / 查找**应用——跳到商店搜索页并自动按关键词检索，结果由商店\n 原生页面展示。**只查询，不下载、不安装**；用户意图是下载/安装时应改走 [installApp]。\n\n **动词归一化**：搜索 / 搜 / 查询 / 查 / 查找 / 找 / 看看有没有 / 应用商店里有没有 → 本函数。\n\n # positive_samples\n - 在应用商店搜一下咪咕音乐\n - 帮我搜索修图软件\n - 查一下视频剪辑相关的应用\n - 查询微信\n - 查找学习类 app\n - 帮我找一下番茄小说\n - 应用商店里有没有 QQ 音乐\n - 看看有哪些天气应用\n\n # negative_samples\n - 帮我下载咪咕音乐 → 应走 [installApp]\n - 帮我装一下微信 → 应走 [installApp]\n - 把支付宝下下来 → 应走 [installApp]\n\n # return\n 返回 [AppActionResult]（跳搜索页成功后，再按 name 大小写不敏感精确匹配查一次以判定结果，最长等 5s）：\n - code=0 且返回列表命中同名应用 → success=true，message=\"「X」已找到\"；\n - code=0 但未命中 / 查询超时 / 网络异常 → success=true，message=\"「X」没有找到\"；\n - 1 关键词为空；6 跳转出错；10501 用户未同意应用商店隐私协议。",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "搜索关键词，不能为空。可以是应用名（精确/模糊）或相关词（品牌、用途等）。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "keyword"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "com.stepos.appstore",
+      "functionId": "com.stepos.appcenter.appfunctions.AppStoreFunctions#installApp",
+      "schemaName": "",
+      "description": "# description\n **下载或安装应用**——先按应用名解析出目标应用：**若已安装，则不跳转、直接返回“「应用名」已安装”**；\n 未安装才跳应用商店搜索页执行检索，对结果里 name 精确命中（大小写不敏感）的卡片自动触发安装：\n 暂停的续传 / 下载中的不打断 / 付费的让用户手动确认 / 默认或错误态走商店统一安装链路（含流量弹窗、降级校验等）。\n\n **动词归一化**：下载 / 下 / 装 / 安装 / 装一下 / 把 X 装到手机 / 把 X 下下来 / 下载并安装 → 本函数。\n\n **匹配策略**：name 大小写不敏感精确匹配。无精确匹配 = 不触发自动下载，让用户在搜索页\n 手动选择（避免\"用户说微信，装了企业微信\"）。\n\n # positive_samples\n - 帮我下载咪咕音乐\n - 帮我装一下支付宝\n - 帮我安装抖音\n - 在应用商店下载今日头条\n - 下载并安装 QQ 音乐\n - 把网易云音乐下下来\n - 帮我把高德地图装到手机上\n - 装一下 B 站\n\n # negative_samples\n - 在应用商店搜索微信 → 应走 [searchApp]\n - 帮我查询有没有修图软件 → 应走 [searchApp]\n - 找一下天气类应用 → 应走 [searchApp]\n\n # return\n 返回 [AppActionResult]（code=0 均为已正常处理、success=true）：\n - 目标应用**已安装**：不跳搜索页，直接返回 message=\"「应用名」已安装\"；\n - 未安装 / 无精确匹配 / 查询失败：跳搜索页+注入自动安装开关（具体匹配/触发由搜索页承载）；\n - 其余：1 应用名为空；6 跳转出错；10501 用户未同意应用商店隐私协议。",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "要下载并安装的应用商店展示名称（如「咪咕音乐」「微信」「支付宝」）， 按 name 大小写不敏感精确匹配触发自动安装；无精确匹配则不下载。"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "appName"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "com.stepos.media.camera",
+      "functionId": "com.stepos.media.camera.appfunctions.CameraLaunchFunctions#openSelfieMode",
+      "schemaName": "",
+      "description": "打开相机自拍模式：拉起相机并切换到前置摄像头。",
+      "enabledByDefault": true,
+      "parameters": []
+    },
+    {
+      "package": "com.stepos.media.camera",
+      "functionId": "com.stepos.media.camera.appfunctions.CameraLaunchFunctions#openBeautyMode",
+      "schemaName": "",
+      "description": "打开相机美颜模式：拉起相机并开启美颜，保持当前默认摄像头。",
+      "enabledByDefault": true,
+      "parameters": []
+    },
+    {
+      "package": "com.amoo.executor",
+      "functionId": "com.amoo.executor.PhoneTools#searchSettings",
+      "schemaName": "",
+      "description": "按中文名称、组件名或关键字查询这台手机的设置索引。返回静态候选；未登记的候选不能当作已验证直达页面。",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "设置关键词，例如无线调试、开发者、键盘、电池健康"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "query"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "com.amoo.executor",
+      "functionId": "com.amoo.executor.PhoneTools#openSettings",
+      "schemaName": "",
+      "description": "打开系统设置子页面。可直达开发者选项、无线调试、输入法设置、电池健康度。用户说打开无线调试时只打开页面，不开启开关；使用此工具而不是 gui_agent。",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "页面名称或id：developer/开发者选项、wireless-debugging/无线调试、keyboard/输入法设置、battery-health/电池健康度"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "page"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "com.amoo.executor",
+      "functionId": "com.amoo.executor.PhoneTools#getToolStatus",
+      "schemaName": "",
+      "description": "检查AMOO本机执行服务是否就绪。不可用时报告需要恢复本机服务，不声称页面已经打开。",
+      "enabledByDefault": true,
+      "parameters": []
+    },
+    {
+      "package": "com.amoo.executor",
+      "functionId": "com.amoo.executor.PhoneTools#navigate",
+      "schemaName": "",
+      "description": "手机系统导航。用户说返回桌面、回到主页、退出当前App时使用home；返回上一页用back；查看最近任务用recents。home是回桌面，不强制结束进程。",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "导航动作，只能是home、back或recents"
+          ],
+          "isRequired": [
+            true
+          ],
+          "name": [
+            "action"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                false
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "package": "com.stepos.weather",
+      "functionId": "com.stepos.weather.appfunctions.WeatherFunctions#get_current_location_weather",
+      "schemaName": "",
+      "description": "# description\n 查询用户当前所在地的天气（端内自动定位，需定位权限与已同意隐私政策）,返回逐日或者逐时的天气信息,并以卡片形式向用户展示详细数据。\n\n [type]类型说明：\n   - `by_date`（默认）：按日期的逐天\n   - `by_hour`：按小时，返回[startDate]当天全部可用逐时 + 次日 00:00~07:00（共 8 小时）\n\n 时间范围返回数据说明：\n - [type] = by_hour，返回 startDate 当天的小时级别数据，并额外多返回次日凌晨8小时\n   （避免深夜问询时当天只剩一两条）；\n - [type] = by_date，在满足可查询日期范围的前提下，若endDate < startDate + 8，\n   返回startDate开始未来9天的天级别数据，否则以endDate日期为结束。\n - 注意：当用户有明确时间范围时，需要按用户要求给出startDate和endDate，\n   不可因上述范围定义而忽略或随意填写date参数。\n\n 仅查询、不修改任何系统状态；生活指数（穿衣 / 洗车 / 感冒 / 紫外线等）只有今天那条，非今天的生活建议不提供。\n\n # positive_samples\n - 今天天气怎么样\n - 现在几度\n - 明天会下雨吗\n - 未来一周天气如何\n - 后天到下周三的天气\n - 明天每个小时的天气\n - 今天下午几点会下雨\n - 今天穿什么\n - 今天适合洗车吗\n\n # negative_samples\n - 今天要不要带伞 → 无对应生活指数，需按逐日预报的 pop 自行判断\n - 适合晒被子吗 → 无对应生活指数，数据不支持\n - 明天适合洗车吗 → 生活指数只有今天那条，其他日期不提供\n - 上海明天天气 → 本能力只查当前定位，不支持指定城市",
+      "enabledByDefault": true,
+      "parameters": [
+        {
+          "description": [
+            "查询类型：by_date（默认）/ by_hour。by_hour 表示要哪天的 24 小时逐时"
+          ],
+          "isRequired": [
+            false
+          ],
+          "name": [
+            "type"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                true
+              ]
+            }
+          ]
+        },
+        {
+          "description": [
+            "起始日期，by_hour 下会只会取他作为当天的逐时日期。by_date 起始日期，缺省=今天。 支持 yyyy-MM-dd。最大的天气范围是未来15天内的天气数据超过范围会报错。"
+          ],
+          "isRequired": [
+            false
+          ],
+          "name": [
+            "startDate"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                true
+              ]
+            }
+          ]
+        },
+        {
+          "description": [
+            "结束日期，by_hour 下会被强制忽略，按startDate的日期返回一天的小时级别数据；。 by_date下 结束日期，在满足可查询日期范围的前提下，若endDate < startDate + 8， 返回startDate开始未来9天的天级别数据，否则以endDate日期为结束。 注意：当用户有明确时间范围时，需要按用户要求给出startDate和endDate， 不可因上述范围定义而忽略或随意填写date参数，最大的天气范围是未来15天内的天气数据超过范围会报错。"
+          ],
+          "isRequired": [
+            false
+          ],
+          "name": [
+            "endDate"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                true
+              ]
+            }
+          ]
+        },
+        {
+          "description": [
+            "起始钟点，startHour（可选，0-23）：仅 by_hour 有意义，表示\"startDate 当天的起始钟点\"—— 这条会被排到卡片最前面。当用户问某个钟点（如\"明天下午3点\"、\"明早7点\"）时， 把那一天设为 startDate、把整点设为 startHour；用户问一个时间段（如\"下午4到6点\"）时只填起点（4）， 不要填多个。用户只问\"某天全天逐小时\"时不填。 注意：逐时数据会多带次日凌晨几小时，但 startHour 永远只指 startDate 当天，不会落到次日。"
+          ],
+          "isRequired": [
+            false
+          ],
+          "name": [
+            "startHour"
+          ],
+          "dataTypeMetadata": [
+            {
+              "type": [
+                8
+              ],
+              "isNullable": [
+                true
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

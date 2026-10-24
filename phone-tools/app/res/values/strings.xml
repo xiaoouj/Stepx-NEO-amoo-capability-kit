@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AMOO 本机工具</string>
+    <string name="accessibility_description">允许 AMOO 本机工具读取当前界面控件，并执行截屏、点击、滑动和文字输入。仅在用户或 AMOO 主动调用时工作，不记录、不上传屏幕内容。</string>
+</resources>

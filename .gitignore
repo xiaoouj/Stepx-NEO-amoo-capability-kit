@@ -1,0 +1,17 @@
+.local/
+.DS_Store
+__pycache__/
+*.pyc
+**/build/
+**/dist/
+node_modules/
+*.bundle.js
+*.keystore
+*.jks
+*.pem
+.env
+.env.*
+**/.broker.json
+**/broker.json
+phone-tools/app/assets/routes.json
+phone-tools/app/assets/settings-index.json

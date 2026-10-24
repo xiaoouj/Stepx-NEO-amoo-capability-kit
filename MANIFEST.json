@@ -1,0 +1,346 @@
+{
+  "date": "2026-10-24",
+  "description": "Source and tool archive; excludes this manifest itself and private/generated build inputs",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 226,
+      "sha256": "89db1b639855b6c4b384f3f51cfc627efb703ea6eb913e733fb12861170df30e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3725,
+      "sha256": "6c4a7e383513aff6389dbd3d90e74727fc48fee6c540c268a4116fba3da7693d"
+    },
+    {
+      "path": "amoo-bridge/README.md",
+      "bytes": 3994,
+      "sha256": "7181f483494c9183619eea79509e611d3a7eb9264d91db9f31d7b67b0bd7394c"
+    },
+    {
+      "path": "amoo-bridge/android/Bridge.java",
+      "bytes": 20383,
+      "sha256": "21cd866d12b4e8ad49df1fd6b2e8e74b528c4dd0f082054a36664240057b6fb2"
+    },
+    {
+      "path": "amoo-bridge/build-android.sh",
+      "bytes": 883,
+      "sha256": "de6a932518034ba28cd2fc15f62fe12c379778a1b23c30f133026c1c3c2996db"
+    },
+    {
+      "path": "amoo-bridge/build-mac.sh",
+      "bytes": 1903,
+      "sha256": "7308e3ddb7a2d851e4a96c107ddba03b14313f9dfb222b40a4f5d6a85cc2ad5e"
+    },
+    {
+      "path": "amoo-bridge/mac/AmooBridge.swift",
+      "bytes": 55125,
+      "sha256": "339f09de9d4550be59b3a83bed23eb3fcfbe074cc3daeda7eacafcfa2dd89384"
+    },
+    {
+      "path": "artifacts/Amoo-Phone-Tools-0.2.0.apk",
+      "bytes": 115533,
+      "sha256": "5daaa95a6881bb75de6d27aa48c86c413048185aa2fb9e72bb9fe48d5593273e"
+    },
+    {
+      "path": "artifacts/README.md",
+      "bytes": 598,
+      "sha256": "2467ce162746b364571a34fbeaa5c00e609d79c561e372e56fbe69e5548f50ed"
+    },
+    {
+      "path": "artifacts/SHA256SUMS",
+      "bytes": 260,
+      "sha256": "4ae92e536417771b2da6b96b968d6606731d8be9d83a6b5f076959ce1515744b"
+    },
+    {
+      "path": "artifacts/amoo-shell.jar",
+      "bytes": 10447,
+      "sha256": "a01b2d7b98c29be2249d1e0fa4b5d71e6a6b5018ff7350b447a9b8e876cf1df5"
+    },
+    {
+      "path": "artifacts/settings-broker.jar",
+      "bytes": 6164,
+      "sha256": "3828d1f7d3f54b0ae0a895c5c023f615f56668439dab7ef166eea1eb0de79a41"
+    },
+    {
+      "path": "docs/SETUP.md",
+      "bytes": 4686,
+      "sha256": "5af64ca69587960e9ae3ea561ebb8ae542d47db0f977a0fae847cc85f278b98d"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "bytes": 1712,
+      "sha256": "71eebbd514b5b4d3958ec7f59c3d1e4e81ac08694fbe76103c9a52fe8dae0a55"
+    },
+    {
+      "path": "docs/VERIFY.md",
+      "bytes": 1818,
+      "sha256": "c2b4091e98456143b1c2a7a4f8385fcf00f8964d84f9352e5e61c3f822d2a9fe"
+    },
+    {
+      "path": "phone-settings/README.md",
+      "bytes": 5112,
+      "sha256": "7adb0907b401fe06e844dacc607d373b1aa17e6661c0c2753a81c39ee5787cd8"
+    },
+    {
+      "path": "phone-settings/android/SettingsBroker.java",
+      "bytes": 7768,
+      "sha256": "45a1634e5268b3389843ad6b0c2d6d2ecc751c41f8e2cdab8d41e640c3b75fcc"
+    },
+    {
+      "path": "phone-settings/build.sh",
+      "bytes": 757,
+      "sha256": "3a4a854815d28d1b96bc053115271911c119ed138f036e43b3048b8472b4e357"
+    },
+    {
+      "path": "phone-settings/build_index.py",
+      "bytes": 5234,
+      "sha256": "16e952c9e65a7a2af2a13d3c8d01275ec6298489a356e54dbf8c2b050450865c"
+    },
+    {
+      "path": "phone-settings/data/routes.json",
+      "bytes": 1166,
+      "sha256": "6da26195d9d80b905944cd286db213643bba205a6167985e5d475a6a8b2601b6"
+    },
+    {
+      "path": "phone-settings/data/settings-index.json",
+      "bytes": 1089576,
+      "sha256": "3e848b6c212bdb173c70e731d1020a97b329bae622d5219bf3730839b1db056e"
+    },
+    {
+      "path": "phone-settings/install.py",
+      "bytes": 6145,
+      "sha256": "888ab449d99c7a1e992173e3bcb864c3e9ffa6ddf7f09188568c7dc81c3fe6f3"
+    },
+    {
+      "path": "phone-settings/phone_settings.py",
+      "bytes": 2735,
+      "sha256": "26dc467ba551fe826a8f5a5d27ea96188013d3a01968c8cb16a3e6ea219a21fa"
+    },
+    {
+      "path": "phone-settings/skill/SKILL.md",
+      "bytes": 1994,
+      "sha256": "ece5c4220006fae38ec1f86a33f8a8929fa171dc791bd8aa79a23199c51af20a"
+    },
+    {
+      "path": "phone-tools/LICENSE-APACHE-2.0",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "phone-tools/NOTICE",
+      "bytes": 339,
+      "sha256": "2fcd28887fba4ef34d87f03173d5e820b20a76d74cad4060ec2561240d1b3d17"
+    },
+    {
+      "path": "phone-tools/README.md",
+      "bytes": 6874,
+      "sha256": "2f853cecf557395e66806433987ee85ca273a3a0b32934c721dc7d42c17d5cd2"
+    },
+    {
+      "path": "phone-tools/app/AndroidManifest.xml",
+      "bytes": 1918,
+      "sha256": "6bdb3ada5831a7906dde62ca86f25106662ab7b2bda8740aa75aa503115e7dc8"
+    },
+    {
+      "path": "phone-tools/app/assets/app_functions.xml",
+      "bytes": 1445,
+      "sha256": "f43be3bbd527a6320d66055e0215b768b28ee684179f012ccd64344a4fd0dfa2"
+    },
+    {
+      "path": "phone-tools/app/assets/app_functions_schema.xsd",
+      "bytes": 6208,
+      "sha256": "7863dd92dc5c3366f42b7a7081495f5ebc6d728979c1294239c64841ca5e5902"
+    },
+    {
+      "path": "phone-tools/app/assets/app_functions_v2.xml",
+      "bytes": 9754,
+      "sha256": "81a6d316aaeae9f17b4aa798d8ec78a3a55ae97127ec9be1108d588fe879f5b7"
+    },
+    {
+      "path": "phone-tools/app/java/com/amoo/executor/AmooAccessibilityService.java",
+      "bytes": 18799,
+      "sha256": "4f9156e12551efdb5686b7a8448fdc1d1037c06cc261648559eda3755349b13a"
+    },
+    {
+      "path": "phone-tools/app/java/com/amoo/executor/BrokerClient.java",
+      "bytes": 2497,
+      "sha256": "43185c0ca083a1606c6bbf86a19e8090886d45986d246304e86cee6e4dc9ec1b"
+    },
+    {
+      "path": "phone-tools/app/java/com/amoo/executor/MainActivity.java",
+      "bytes": 3121,
+      "sha256": "2d59b2e188455b99bc44f934123118f0787edd50ed1aea92691e0b7279120b98"
+    },
+    {
+      "path": "phone-tools/app/java/com/amoo/executor/PhoneToolsService.java",
+      "bytes": 10423,
+      "sha256": "01787921f7e03d41b08c8b7888f8fd6d97fa1623720945aa39b6d8f46b6ff451"
+    },
+    {
+      "path": "phone-tools/app/res/values/strings.xml",
+      "bytes": 357,
+      "sha256": "5c12c9a229e1c72b1c151f882892323ec5cbda67b91951bed7c9fb9d6334e24e"
+    },
+    {
+      "path": "phone-tools/app/res/xml/accessibility_service_config.xml",
+      "bytes": 742,
+      "sha256": "ee00f7f83015fccb014564170d7b5928e68e5b8b10e127862ac19dc26238e1b4"
+    },
+    {
+      "path": "phone-tools/build.py",
+      "bytes": 2958,
+      "sha256": "d19b708b91ee4e908248ddcf22d97102419b3dcdef6c7c4893f9324887d98bc5"
+    },
+    {
+      "path": "phone-tools/generate_metadata.py",
+      "bytes": 4634,
+      "sha256": "f1336cfd815c16b3312515ad42b9b0c2fb275af90647dd4cbda13dd3bc098ccf"
+    },
+    {
+      "path": "phone-tools/install.py",
+      "bytes": 3457,
+      "sha256": "caa723ab91444a96da07402c709000e7d11744332bdc0c7d33be5bead28b17d7"
+    },
+    {
+      "path": "phone-tools/skill/SKILL.md",
+      "bytes": 5288,
+      "sha256": "1cae4d007c97c3bbb939c9d819b59afb4eb8ba484d1896e9f616fe1213494459"
+    },
+    {
+      "path": "reports/amoo-ability-catalog-2026-10-22.json",
+      "bytes": 249550,
+      "sha256": "31d42038a180b50f3af7e2722cbb66e3bb9233ea313b396187a3c6247a731578"
+    },
+    {
+      "path": "reports/amoo-ability-catalog-2026-10-22.md",
+      "bytes": 75536,
+      "sha256": "6354e35a694cfe1c8a7d53d38e6dbcdc3abb6f09a6bb30855d74625cea2b661c"
+    },
+    {
+      "path": "reports/amoo-appstore-install-2026-10-22.md",
+      "bytes": 5098,
+      "sha256": "fc61af6671bb6655ea8d10d64979d1827656a5b72eaab6d3344ad226f050a35b"
+    },
+    {
+      "path": "reports/amoo-bridge-feasibility.md",
+      "bytes": 2963,
+      "sha256": "f4fc7f6e16fd3290b4d55acc141761b18aa5cafc6f2a63bb9826ebd4897375c9"
+    },
+    {
+      "path": "reports/amoo-capabilities-2026-10-21.md",
+      "bytes": 5125,
+      "sha256": "bb0262125c59da722730ee4e6c1b652ef7375b974ff920593b1d5a8777d9e4f3"
+    },
+    {
+      "path": "reports/amoo-gui-controller-2026-10-22.md",
+      "bytes": 5660,
+      "sha256": "beb7331120bf36feabaa6e202acbc53991bfe2baf334995c7a15de6b724e9798"
+    },
+    {
+      "path": "reports/amoo-news-roundtrip-2026-10-23.md",
+      "bytes": 3342,
+      "sha256": "355ceab6e8fb4cb978489ffe2027d9e7f280316fc0cc890446860545d197a6d9"
+    },
+    {
+      "path": "reports/amoo-phone-tools-2026-10-22.md",
+      "bytes": 5408,
+      "sha256": "a90c56860fc5c4458873a3d171f856a6bf963f089bcfb7d39c18b61d5325b404"
+    },
+    {
+      "path": "reports/amoo-runtime-observation-2026-10-23.md",
+      "bytes": 5704,
+      "sha256": "0339985f34c1f6735aae756dbfc417c4f920bd45d04266447f9cf9ab6a9a8d41"
+    },
+    {
+      "path": "reports/dfroot-repeat-2026-10-23.md",
+      "bytes": 2216,
+      "sha256": "cf684f9c49766c9922731a2d489ffd94a7f4013af806920e12d87850dddf2f33"
+    },
+    {
+      "path": "reports/dirtyfrag-root-2026-10-21.md",
+      "bytes": 2101,
+      "sha256": "7ee529fc49955343fb8f25ab76fbf4b1c20965ce409e12234dc93945a71b72cc"
+    },
+    {
+      "path": "reports/mac-ai-backend-2026-10-23.md",
+      "bytes": 4196,
+      "sha256": "a690a92d4f6f6dc31032b4a6555d9550197a2ef8f36a08b99aa60a92b87d8f38"
+    },
+    {
+      "path": "reports/phone-settings-2026-10-22.md",
+      "bytes": 6426,
+      "sha256": "4547d55b53e48a489538d7dd28568179e028ad0dd840b4e8ffa86b7d574701c3"
+    },
+    {
+      "path": "reports/phone-tools-restore-2026-10-23.md",
+      "bytes": 3719,
+      "sha256": "8a4c8b534032cdc1d942c39b60d009a5c50eae0f89bd368a8050b67794f85f49"
+    },
+    {
+      "path": "reports/stepbridge-root-review-2026-10-22.md",
+      "bytes": 6022,
+      "sha256": "fbb7bf8d8a893250af53e8874a59ca067adf868d03000079b176c700f6f6325d"
+    },
+    {
+      "path": "reports/stepx-feasibility.md",
+      "bytes": 5381,
+      "sha256": "36445a57792748b187132e947e7dfe11b1e983af0bfae9bbefabc2aa1c0efe3f"
+    },
+    {
+      "path": "reports/stepx-static-protocol.md",
+      "bytes": 12615,
+      "sha256": "ebb6be0db97519fbf2b44e05e462d5f5cd298df0c0bd4215c4c000e02014d962"
+    },
+    {
+      "path": "research/runtime/README.md",
+      "bytes": 1558,
+      "sha256": "c95c43993e6a429bc5fb965aa3f6fbba64162763f27f0986ea17f9d602ba8db6"
+    },
+    {
+      "path": "research/runtime/observe-news.js",
+      "bytes": 4329,
+      "sha256": "15a327c5b13a9ad916de7159ff849d5764af0a949370208ca74318cb680c890f"
+    },
+    {
+      "path": "research/runtime/observe-transport.js",
+      "bytes": 2562,
+      "sha256": "8a5adae74893ae662366d9dcf744e3f2c98ff2eacb7cb18cbe52bf61fc255293"
+    },
+    {
+      "path": "research/runtime/signatures.js",
+      "bytes": 604,
+      "sha256": "007c2e1b8e003f1dd00d27285557fa0fb99b3fe20e087f330999560efdde3bb0"
+    },
+    {
+      "path": "skills/agenttouch/README.md",
+      "bytes": 1122,
+      "sha256": "16b20b19dbae117fae8e10cb334083dfa6d1e585491f5758c49621bbd4776e8b"
+    },
+    {
+      "path": "skills/appstore-install-app/SKILL.md",
+      "bytes": 910,
+      "sha256": "a5c0742310a3518a4e1c37f32277e1605d24adb7566dc9f9a0906a21ff491db3"
+    },
+    {
+      "path": "tools/agenttouch_diagnostic.py",
+      "bytes": 3391,
+      "sha256": "490d4cf860d7492e15a4486df639d7ae07119603a5c07a1b40600810a956f56a"
+    },
+    {
+      "path": "tools/build-ability-catalog.py",
+      "bytes": 12095,
+      "sha256": "1515c3670b0db119a1db5a7dec56ef2c0eb87a3caece9f093fd8cdffe5c3a041"
+    },
+    {
+      "path": "tools/env.sh",
+      "bytes": 771,
+      "sha256": "9cec73e00f1df4175426e958dee22ecd675b618ce3f33c5334079956dfcc308a"
+    },
+    {
+      "path": "tools/stepx_probe.py",
+      "bytes": 6332,
+      "sha256": "234387af6323f230732f9dfe76b7539d308939dab5ec631010bfd07e101eae32"
+    }
+  ]
+}

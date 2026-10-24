@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<appfunctions>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#openSettings</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#navigate</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#searchSettings</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#getToolStatus</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#screenshot</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#uiDump</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#tap</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#swipe</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+  <appfunction>
+    <function_id>com.amoo.executor.PhoneTools#inputText</function_id>
+    <enabled_by_default>true</enabled_by_default>
+  </appfunction>
+</appfunctions>

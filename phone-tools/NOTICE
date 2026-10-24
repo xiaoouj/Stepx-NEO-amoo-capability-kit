@@ -1,0 +1,2 @@
+app/assets/app_functions_schema.xsd is the Android Open Source Project AppFunctions metadata schema, copyright 2025 The Android Open Source Project, licensed under Apache License 2.0. It was obtained from the AndroidX metadata packaged in the device application.
+Other source files in this directory are newly authored for this workspace.
